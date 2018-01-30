@@ -1,0 +1,266 @@
+body {
+  background: #fafafa; }
+
+body, * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'GothamProRegular'; }
+
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProItalic";
+  src: url("../fonts/GothamProItalic/GothamProItalic.eot");
+  src: url("../fonts/GothamProItalic/GothamProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProItalic/GothamProItalic.woff") format("woff"), url("../fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProMediumItalic";
+  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+  src: url("../fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"), url("../fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProLightItalic";
+  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot");
+  src: url("../fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"), url("../fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBoldItalic";
+  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+  src: url("../fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"), url("../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "GothamProBlackItalic";
+  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+  src: url("../fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"), url("../fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+header {
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  header .catalog {
+    height: 100%;
+    background: #d4ebe8;
+    padding: 0 25px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .catalog p {
+      font-family: "GothamProBold"; }
+  header nav {
+    width: 665px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 35px; }
+    header nav a:nth-child(2) {
+      text-transform: uppercase; }
+  header .language {
+    font-size: 0; }
+    header .language span {
+      width: 45px;
+      height: 45px;
+      background: #d4ebe8;
+      color: #000;
+      display: inline-block;
+      font-size: 20px;
+      text-align: center;
+      line-height: 45px; }
+      header .language span.active {
+        background: #8cc9c7;
+        color: #fff;
+        font-family: "GothamProBold"; }
+
+.section-in {
+  max-width: 1180px;
+  margin: 0 auto; }
+
+.first-section {
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
+  background: -webkit-radial-gradient(center, ellipse, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
+  background: -o-radial-gradient(center, ellipse, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
+  background: radial-gradient(ellipse at center, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%); }
+  .first-section .main-slider {
+    width: 820px;
+    margin: 0px auto 100px;
+    padding-top: 50px; }
+    .first-section .main-slider .owl-nav {
+      width: 280px;
+      display: block;
+      margin: 0 auto; }
+      .first-section .main-slider .owl-nav > div {
+        font-size: 0;
+        position: relative; }
+        .first-section .main-slider .owl-nav > div:after {
+          position: absolute;
+          bottom: -25px;
+          font-size: 30px;
+          color: #8bc9c7;
+          width: 40px;
+          height: 40px;
+          -webkit-border-radius: 40px;
+                  border-radius: 40px;
+          background: rgba(255, 255, 255, 0);
+          text-align: center;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        .first-section .main-slider .owl-nav > div:hover:after {
+          background: rgba(255, 255, 255, 0.8); }
+      .first-section .main-slider .owl-nav .owl-prev:after {
+        content: "<";
+        left: 0; }
+      .first-section .main-slider .owl-nav .owl-next:after {
+        content: ">";
+        right: 0; }
+    .first-section .main-slider .owl-dots {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .first-section .main-slider .owl-dot {
+      width: 10px;
+      height: 10px;
+      background: #8bc9c7;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      display: inline-block;
+      margin: 0 10px; }
+      .first-section .main-slider .owl-dot.active {
+        background: #ed174b; }
+    .first-section .main-slider-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .first-section .main-slider-item .item-photo {
+        width: 100%;
+        max-width: 350px; }
+  .first-section .menu-icons {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .first-section .menu-icons:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      left: 0;
+      bottom: -20px;
+      background: -webkit-linear-gradient(top, #c4e5e4 0%, rgba(125, 185, 232, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(#c4e5e4), to(rgba(125, 185, 232, 0)));
+      background: -o-linear-gradient(top, #c4e5e4 0%, rgba(125, 185, 232, 0) 100%);
+      background: linear-gradient(to bottom, #c4e5e4 0%, rgba(125, 185, 232, 0) 100%); }
+    .first-section .menu-icons-item {
+      width: -webkit-calc(100%/7);
+      width: calc(100%/7);
+      height: 170px;
+      text-align: center;
+      background: #edf5f5;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-left: 1px solid #dbeae8; }
+      .first-section .menu-icons-item:hover {
+        background: #ffffff;
+        cursor: pointer; }
+      .first-section .menu-icons-item:last-child {
+        border-right: 1px solid #dbeae8; }
+      .first-section .menu-icons-item .item-in {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .first-section .menu-icons-item svg {
+        width: 58px;
+        height: auto;
+        display: block;
+        margin: 0 auto; }
+      .first-section .menu-icons-item p {
+        font-family: "GothamProBold";
+        font-size: 14px;
+        margin-top: 15px;
+        max-width: 80%;
+        margin: 15px auto 0; }
