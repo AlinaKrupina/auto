@@ -264,3 +264,23 @@ header {
         margin-top: 15px;
         max-width: 80%;
         margin: 15px auto 0; }
+
+/*404*/
+.main-mistake {
+  background: url(/img/pexels-photo-315938.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .main-mistake h4 {
+    color: #fff;
+    font-size: 24px;
+    font-family: "GothamProBold";
+    padding-top: 64px; }
+  .main-mistake .ufo-img {
+    width: 174px;
+    height: 113px;
+    display: block; }
+  .main-mistake .ufolights {
+    display: block; }
