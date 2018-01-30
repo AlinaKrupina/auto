@@ -111,6 +111,13 @@ a{
     color: inherit;
     text-decoration: none;
 }
+h2{
+    margin: 75px 0 45px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "GothamProBold";
+    text-transform: uppercase;
+}
 header{
     max-width: 1180px;
     margin: 0 auto;
@@ -118,6 +125,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .logo{
+        width: 175px;
+        padding: 10px 20px 7px 15px;
+        img{
+            width: 100%;
+        }
+    }
     .catalog{
         height: 100%;
         background: #d4ebe8;
@@ -127,6 +141,14 @@ header{
         align-items: center;
         p{
             font-family: "GothamProBold";
+            font-size: 16px;
+        }
+        svg{
+            width: 6px;
+            height: 12px;
+            fill: #e64f74;
+            margin-left: 8px;
+            margin-bottom: 5px;
         }
     }
     nav{
@@ -135,6 +157,8 @@ header{
         justify-content: space-between;
         padding: 0 35px;
         a{
+            color: #000000;
+            font-size: 16px;
             &:nth-child(2){
                 text-transform: uppercase;
             }
@@ -148,9 +172,10 @@ header{
             background: #d4ebe8;
             color: #000;
             display: inline-block;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
             line-height: 45px;
+            vertical-align: top;
             &.active{
                 background: #8cc9c7;
                 color: #fff;
@@ -165,7 +190,7 @@ main{
     max-width: 1180px;
     margin: 0 auto;
 }
-.first-section{
+.section-slider{
     background: -moz-radial-gradient(center, ellipse cover,  rgba(183,245,243,0) 0%, rgba(183,245,243,0.01) 1%, rgba(183,245,243,1) 100%);
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(183,245,243,0) 0%,rgba(183,245,243,0.01) 1%,rgba(183,245,243,1) 100%);
     background: radial-gradient(ellipse at center,  rgba(183,245,243,0) 0%,rgba(183,245,243,0.01) 1%,rgba(183,245,243,1) 100%);
@@ -237,7 +262,7 @@ main{
     }
     .menu-icons{
         width: 100%;
-        display: flex;
+        font-size: 0;
         position: relative;
         &:after{
             content: '';
@@ -253,13 +278,17 @@ main{
         &-item{
             width: calc(100%/7);
             height: 170px;
+            display: inline-block;
+            vertical-align: top;
             text-align: center;
             background: #edf5f5;
-            transition: 0.3s;
             border-left: 1px solid #dbeae8;
             &:hover{
                 background: #ffffff;
                 cursor: pointer;
+                .shp0{
+                    fill: #8bc9c7;
+                }
             }
             &:last-child{
                 border-right: 1px solid #dbeae8;
@@ -283,5 +312,102 @@ main{
                 margin: 15px auto 0;
             }
         }
+    }
+}
+.section-popular{
+    .popular{
+        &-block{
+            font-size: 0;
+        }
+        &-item{
+            width: calc(100% / 3);
+            padding: 30px;
+            border: 1px solid #c5ddda;
+            display: inline-block;
+            &:hover{
+                -webkit-box-shadow: 0px 0px 30px 5px rgba(190,211,210,1);
+                -moz-box-shadow: 0px 0px 30px 5px rgba(190,211,210,1);
+                box-shadow: 0px 0px 30px 5px rgba(190,211,210,1);
+            }
+        }
+    }
+    .item{
+        &-img{
+            width: 100%;
+        }
+        &-head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0 15px;
+            margin-top: 20px;
+            border-top: 1px solid #d4ebe8;
+            .title{
+                font-size: 14px;
+                font-family: "GothamProBold";
+                width: 60%;
+            }
+            .price{
+                font-size: 16px;
+                font-family: "GothamProBold";
+                text-align: center;
+                width: 120px;
+            }
+            svg{
+                width: auto;
+                height: 15px;
+            }
+        }
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            .available{
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                width: calc(100% - 220px);
+                svg{
+                    margin-right: 10px;
+                    fill: #29a695;
+                }
+            }
+            .like{
+                width: 100px;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            svg{
+                width: auto;
+                height: 15px;
+            }
+            .buy{
+                background: #d4ebe8;
+                font-family: "GothamProBold";
+                font-size: 14px;
+                text-transform: uppercase;
+                width: 120px;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+    }
+    .all-items{
+        height: 50px;
+        color: #fff;
+        background: #7ad0c6;
+        line-height: 50px;
+        font-size: 16px;
+        font-family: "GothamProBold";
+        margin: 40px auto 70px;
+        display: inline-block;
+        width: calc(100% / 3);
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
