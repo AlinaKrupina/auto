@@ -456,3 +456,40 @@ main{
         }
     }
 }
+.section-news{
+    .news{
+        &-block {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-item {
+            width: calc((100% - 75px)/4);
+            figure {
+                height: 200px;
+                overflow: hidden;
+            }
+            img{
+                height: 100%;
+            }
+            .title{
+                margin-top: 20px;
+            }
+        }
+    }
+    .all-news{
+        height: 50px;
+        color: #fff;
+        background: #7ad0c6;
+        line-height: 50px;
+        font-size: 16px;
+        font-family: "GothamProBold";
+        margin: 50px auto 90px;
+        padding: 0 60px;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

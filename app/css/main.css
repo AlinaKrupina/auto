@@ -448,3 +448,42 @@ header {
     padding-bottom: 100px; }
   .section-brands .brand-item {
     height: 100px; }
+
+.section-news .news-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.section-news .news-item {
+  width: -webkit-calc((100% - 75px)/4);
+  width: calc((100% - 75px)/4); }
+  .section-news .news-item figure {
+    height: 200px;
+    overflow: hidden; }
+  .section-news .news-item img {
+    height: 100%; }
+  .section-news .news-item .title {
+    margin-top: 20px; }
+
+.section-news .all-news {
+  height: 50px;
+  color: #fff;
+  background: #7ad0c6;
+  line-height: 50px;
+  font-size: 16px;
+  font-family: "GothamProBold";
+  margin: 50px auto 90px;
+  padding: 0 60px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
