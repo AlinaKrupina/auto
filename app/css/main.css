@@ -163,6 +163,7 @@ header {
       color: #000;
       display: inline-block;
       font-size: 15px;
+      font-weight: bold;
       text-align: center;
       line-height: 45px;
       vertical-align: top; }
@@ -247,7 +248,7 @@ header {
       display: inline-block;
       margin: 0 10px; }
       .section-slider .main-slider .owl-dot.active {
-        background: #ed174b; }
+        background: #EF1551; }
     .section-slider .main-slider-item {
       font-size: 0;
       margin-bottom: 30px; }
@@ -284,7 +285,7 @@ header {
             width: 230px;
             height: 50px;
             line-height: 50px;
-            background: #ed174c;
+            background: #ED174B;
             display: inline-block;
             text-align: center;
             text-transform: uppercase; }
@@ -324,7 +325,7 @@ header {
         .section-slider .menu-icons-item:hover .shp0 {
           fill: #8bc9c7; }
       .section-slider .menu-icons-item:last-child {
-        border-right: 1px solid #dbeae8; }
+        border-right: 1px solid #C5DFD6; }
       .section-slider .menu-icons-item .item-in {
         padding-top: 30px; }
       .section-slider .menu-icons-item svg {
@@ -370,7 +371,7 @@ header {
           justify-content: space-between;
   padding: 10px 0 15px;
   margin-top: 20px;
-  border-top: 1px solid #d4ebe8; }
+  border-top: 1px solid #D2EBE5; }
   .section-popular .item-head .title {
     font-size: 14px;
     font-family: "GothamProBold";
@@ -412,7 +413,7 @@ header {
     width: calc(100% - 220px); }
     .section-popular .item-footer .available svg {
       margin-right: 10px;
-      fill: #29a695; }
+      fill: #2DA48E; }
   .section-popular .item-footer .like {
     width: 100px;
     padding: 0 20px;
@@ -426,15 +427,19 @@ header {
             justify-content: space-between; }
   .section-popular .item-footer svg {
     width: auto;
-    height: 15px; }
+    height: 15px;
+    fill: #818181; }
   .section-popular .item-footer .buy {
-    background: #d4ebe8;
+    background: #D5EBE8;
     font-family: "GothamProBold";
     font-size: 14px;
     text-transform: uppercase;
     width: 120px;
     text-align: center;
     line-height: 40px; }
+    .section-popular .item-footer .buy:hover {
+      color: #fff;
+      background: #7AD0C5; }
 
 .section-popular .all-items {
   height: 50px;
@@ -468,7 +473,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(43, 42, 42, 0.8); }
+    background: rgba(43, 42, 42, 0.8);
+    opacity: 0.8; }
   .section-brands h2 {
     color: #fff; }
   .section-brands .brand-block {
