@@ -178,7 +178,6 @@ header{
             color: #000;
             display: inline-block;
             font-size: 15px;
-            font-weight: bold;
             text-align: center;
             line-height: 45px;
             vertical-align: top;
@@ -187,6 +186,74 @@ header{
                 color: #fff;
                 font-family: "GothamProBold";
             }
+        }
+    }
+}
+.user-panel{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #edf6f5;
+    width: 100%;
+    z-index: 9;
+    .section-in{
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search{
+        background: #d4ebe8;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        button{
+            width: 60px;
+            height: 100%;
+            font-size: 16px;
+            margin: 0;
+            border: none;
+            padding: 0;
+            background: none;
+        }
+        input{
+            padding: 15px;
+            height: calc(100% - 6px);
+            border: none;
+            font-size: 16px;
+            width: 400px;
+            margin-right: 3px;
+        }
+    }
+    .sign-in{
+        background: #d4ebe8;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 80px;
+        font-size: 10px;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px 0 13px;
+        & > *{
+            display: block;
+            width: 100%;
+        }
+        .fa{
+            font-size: 20px;
+        }
+    }
+    .number{
+        padding: 0 20px;
+        font-size: 16px;
+        font-family: "GothamProBold";
+    }
+    .icons div{
+        width: 25px;
+        display: inline-block;
+        svg{
+            width: 100%;
+            height: 100%;
         }
     }
 }
@@ -271,7 +338,7 @@ main{
             display: inline-block;
             margin: 0 10px;
             &.active{
-                background: #EF1551;
+                background: #ed174b;
             }
         }
         &-item{
@@ -303,7 +370,7 @@ main{
                         width: 230px;
                         height: 50px;
                         line-height: 50px;
-                        background: #ED174B;
+                        background: #ed174c;
                         display: inline-block;
                         text-align: center;
                         text-transform: uppercase;
@@ -351,7 +418,7 @@ main{
                 }
             }
             &:last-child{
-                border-right: 1px solid #C5DFD6;
+                border-right: 1px solid #dbeae8;
             }
             .item-in{
                 padding-top: 30px;
@@ -389,9 +456,17 @@ main{
             }
         }
     }
+
     .item{
         &-img{
-            width: 100%;
+            height: 235px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         &-head{
             display: flex;
@@ -399,7 +474,7 @@ main{
             justify-content: space-between;
             padding: 10px 0 15px;
             margin-top: 20px;
-            border-top: 1px solid #D2EBE5;
+            border-top: 1px solid #d4ebe8;
             .title{
                 font-size: 14px;
                 font-family: "GothamProBold";
@@ -428,7 +503,7 @@ main{
                 width: calc(100% - 220px);
                 svg{
                     margin-right: 10px;
-                    fill: #2DA48E;
+                    fill: #29a695;
                 }
             }
             .like{
@@ -440,20 +515,15 @@ main{
             svg{
                 width: auto;
                 height: 15px;
-                fill:#818181;
             }
             .buy{
-                background: #D5EBE8;
+                background: #d4ebe8;
                 font-family: "GothamProBold";
                 font-size: 14px;
                 text-transform: uppercase;
                 width: 120px;
                 text-align: center;
                 line-height: 40px;
-                &:hover{
-                  color: #fff;
-                  background: #7AD0C5;
-                }
             }
         }
     }
@@ -487,7 +557,6 @@ main{
         width: 100%;
         height: 100%;
         background: rgba(43, 42, 42, 0.8);
-        opacity: 0.8;
     }
     h2{
         color: #fff;
@@ -538,6 +607,83 @@ main{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+.section-contact{
+    background: #f8f8f8;
+    .contact-in{
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+        font-size: 0;
+        & > div{
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #map{
+            height: 103%;
+        }
+        .office{
+            background: url(../img/contact_background.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 80px 100px;
+            h4{
+                font-size: 20px;
+                font-family: "GothamProBold";
+                margin-bottom: 30px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            &-in{
+                width: 520px;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 30px 0;
+                font-size: 0;
+                div{
+                    display: inline-block;
+                    width: 50%;
+                    vertical-align: top;
+                    color: #fff;
+                    padding-left: 30px;
+                    position: relative;
+                    &:before{
+                        content:"\f095";
+                        font-family: FontAwesome;
+                        font-size: 15px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    &.phone:before{
+                        content:"\f095";
+                    }
+                    &.email:before{
+                        content:"\f1fa";
+                    }
+                    &.schedule:before{
+                        content:"\f073";
+                    }
+                    &.address:before{
+                        content:"\f041";
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: "GothamProBold";
+                        margin-bottom: 15px;
+                    }
+                    span{
+                        font-size: 14px;
+                        display: block;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
     }
 }
 footer{
