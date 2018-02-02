@@ -139,7 +139,7 @@ header{
     }
     .catalog{
         height: 100%;
-        background: #d4ebe8;
+        background: #D5EBE8;
         padding: 0 25px;
         text-transform: uppercase;
         display: flex;
@@ -151,7 +151,7 @@ header{
         svg{
             width: 6px;
             height: 12px;
-            fill: #e64f74;
+            fill: #EB1E56;
             margin-left: 8px;
             margin-bottom: 5px;
         }
@@ -265,9 +265,10 @@ main{
     position: relative;
 }
 .section-slider{
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(183,245,243,0) 0%, rgba(183,245,243,0.01) 1%, rgba(183,245,243,1) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(183,245,243,0) 0%,rgba(183,245,243,0.01) 1%,rgba(183,245,243,1) 100%);
-    background: radial-gradient(ellipse at center,  rgba(183,245,243,0) 0%,rgba(183,245,243,0.01) 1%,rgba(183,245,243,1) 100%);
+  background: #bee5e0; /* Old browsers */
+  background: -moz-linear-gradient(top, #bee5e0 6%, #deeeed 34%, #deeeed 47%, #deeeed 66%, #bee5e0 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bee5e0 6%,#deeeed 34%,#deeeed 47%,#deeeed 66%,#bee5e0 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bee5e0 6%,#deeeed 34%,#deeeed 47%,#deeeed 66%,#bee5e0 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     .main-slider{
         width: 820px;
         margin: 0px auto 100px;
@@ -370,7 +371,7 @@ main{
                         width: 230px;
                         height: 50px;
                         line-height: 50px;
-                        background: #ed174c;
+                        background: #ED174B;
                         display: inline-block;
                         text-align: center;
                         text-transform: uppercase;
@@ -511,10 +512,12 @@ main{
                 padding: 0 20px;
                 display: flex;
                 justify-content: space-between;
+                fill: #7F7F7F;
             }
             svg{
                 width: auto;
                 height: 15px;
+                fill: #7F7F7F;
             }
             .buy{
                 background: #d4ebe8;
@@ -524,6 +527,11 @@ main{
                 width: 120px;
                 text-align: center;
                 line-height: 40px;
+                &:hover{
+                  background: #7AD0C5;
+                  color: #fff;
+                  transition: 0.3s;
+                }
             }
         }
     }
@@ -556,7 +564,8 @@ main{
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(43, 42, 42, 0.8);
+        background: #151515;
+        opacity: 0.6;
     }
     h2{
         color: #fff;
@@ -595,7 +604,7 @@ main{
     .all-news{
         height: 50px;
         color: #fff;
-        background: #7ad0c6;
+        background: #7AD0C5;
         line-height: 50px;
         font-size: 16px;
         font-family: "GothamProBold";
@@ -735,11 +744,12 @@ footer{
                 &-bottom{
                     padding-top: 30px;
                     border-top: 1px solid #717171;
-                    width: 100%;
+                    width: 86%;
                     & > *{
                         margin-right: 30px;
                         &:hover{
                             color: #8bc9c7;
+                            transition: 0.3s;
                         }
                     }
                 }
@@ -766,7 +776,7 @@ footer{
                 flex-wrap: wrap;
                 height: 100%;
                 .sign-in{
-                    border: 1px solid #d0f6f5;
+                    border: 1px solid #BDDDDA;
                     height: 40px;
                     font-family: "GothamProBold";
                     font-size: 16px;

@@ -118,7 +118,7 @@ header {
       width: 100%; }
   header .catalog {
     height: 100%;
-    background: #d4ebe8;
+    background: #D5EBE8;
     padding: 0 25px;
     text-transform: uppercase;
     display: -webkit-box;
@@ -135,7 +135,7 @@ header {
     header .catalog svg {
       width: 6px;
       height: 12px;
-      fill: #e64f74;
+      fill: #EB1E56;
       margin-left: 8px;
       margin-bottom: 5px; }
   header nav {
@@ -259,10 +259,15 @@ header {
   position: relative; }
 
 .section-slider {
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
-  background: -webkit-radial-gradient(center, ellipse, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
-  background: -o-radial-gradient(center, ellipse, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%);
-  background: radial-gradient(ellipse at center, rgba(183, 245, 243, 0) 0%, rgba(183, 245, 243, 0.01) 1%, #b7f5f3 100%); }
+  background: #bee5e0;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bee5e0 6%, #deeeed 34%, #deeeed 47%, #deeeed 66%, #bee5e0 97%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, #bee5e0), color-stop(34%, #deeeed), color-stop(47%, #deeeed), color-stop(66%, #deeeed), color-stop(97%, #bee5e0));
+  background: -o-linear-gradient(top, #bee5e0 6%, #deeeed 34%, #deeeed 47%, #deeeed 66%, #bee5e0 97%);
+  background: linear-gradient(to bottom, #bee5e0 6%, #deeeed 34%, #deeeed 47%, #deeeed 66%, #bee5e0 97%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   .section-slider .main-slider {
     width: 820px;
     margin: 0px auto 100px;
@@ -366,7 +371,7 @@ header {
             width: 230px;
             height: 50px;
             line-height: 50px;
-            background: #ed174c;
+            background: #ED174B;
             display: inline-block;
             text-align: center;
             text-transform: uppercase; }
@@ -513,10 +518,12 @@ header {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    fill: #7F7F7F; }
   .section-popular .item-footer svg {
     width: auto;
-    height: 15px; }
+    height: 15px;
+    fill: #7F7F7F; }
   .section-popular .item-footer .buy {
     background: #d4ebe8;
     font-family: "GothamProBold";
@@ -525,6 +532,12 @@ header {
     width: 120px;
     text-align: center;
     line-height: 40px; }
+    .section-popular .item-footer .buy:hover {
+      background: #7AD0C5;
+      color: #fff;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
 
 .section-popular .all-items {
   height: 50px;
@@ -558,7 +571,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(43, 42, 42, 0.8); }
+    background: #151515;
+    opacity: 0.6; }
   .section-brands h2 {
     color: #fff; }
   .section-brands .brand-block {
@@ -598,7 +612,7 @@ header {
 .section-news .all-news {
   height: 50px;
   color: #fff;
-  background: #7ad0c6;
+  background: #7AD0C5;
   line-height: 50px;
   font-size: 16px;
   font-family: "GothamProBold";
@@ -742,11 +756,14 @@ footer {
       footer .footer-head .contact-bottom {
         padding-top: 30px;
         border-top: 1px solid #717171;
-        width: 100%; }
+        width: 86%; }
         footer .footer-head .contact-bottom > * {
           margin-right: 30px; }
           footer .footer-head .contact-bottom > *:hover {
-            color: #8bc9c7; }
+            color: #8bc9c7;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
     footer .footer-head .schedule {
       display: -webkit-box;
       display: -webkit-flex;
@@ -780,7 +797,7 @@ footer {
               flex-wrap: wrap;
       height: 100%; }
       footer .footer-head .cabinet .sign-in {
-        border: 1px solid #d0f6f5;
+        border: 1px solid #BDDDDA;
         height: 40px;
         font-family: "GothamProBold";
         font-size: 16px;
