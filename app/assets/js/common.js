@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $(".js-filter-tab").click(function(){
+        $(this).parent().toggleClass('active');
+    });
     $(".main-slider.owl-carousel").owlCarousel({
         items:1,
         loop: true,
@@ -166,12 +169,17 @@ function initMap() {
             }
         ]
     });
-    var iconBase = 'assets/img/';
+    var icon = {
+        url: "assets/img/placeholder_pin.svg",
+        scaledSize: new google.maps.Size(100, 100),
+        origin: new google.maps.Point(0,0),
+        anchor: new google.maps.Point(0, 0)
+    };
     var marker = new google.maps.Marker({
         position: uluru,
         map: map,
         draggable: true,
         animation: google.maps.Animation.DROP,
-        icon: iconBase + 'placeholder_pin.svg'
+        icon: icon
     });
 }
