@@ -78,7 +78,7 @@ gulp.task('build', [
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'app/assets/css/main.css',
         'app/assets/css/libs.min.css'
-    ]).pipe(gulp.dest('dist/css'))
+    ]).pipe(gulp.dest('dist/assets/css'))
 
     var buildFonts = gulp.src('app/assets/fonts/**/*'). // Переносим шрифты в продакшен
     pipe(gulp.dest('dist/assets/fonts'))

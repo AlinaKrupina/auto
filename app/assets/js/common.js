@@ -10,6 +10,9 @@ $(document).ready(function() {
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
     });
+    $('.js-number').inputmask({
+        mask: "+38 (999) 999-99-99",    
+    });
 });
 function initMap() {
     var uluru = {
@@ -170,7 +173,7 @@ function initMap() {
         ]
     });
     var icon = {
-        url: "assets/img/placeholder_pin.svg",
+        url: "/assets/img/placeholder_pin.svg",
         scaledSize: new google.maps.Size(100, 100),
         origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point(0, 0)
