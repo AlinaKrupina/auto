@@ -113,6 +113,7 @@ h2 {
     font-size: 30px;
     font-family: "GothamProBold";
     text-transform: uppercase;
+    width: 100%;
 }
 
 header {
@@ -1755,6 +1756,14 @@ main {
         }
     }
 }
+.map-section{
+    &.section-contact{
+        div.map{
+            width: 100%;
+        }
+    }
+}
+
 .section-about{
     background: #e6f2f2 url(../img/pexels.png);
     padding: 45px 0 65px;
@@ -1788,6 +1797,58 @@ main {
 .form-section{
     background: #f6f8f8;
     padding: 60px 0;
+    &.contact{
+        background: url(../img/contact.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 115px 0;
+    }
+    .contact-block{
+        margin: 0 auto;
+        max-width: 980px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        & > div{
+            width: calc((100% - 30px)/3);
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            div, p{
+                width: 100%;
+            }
+        }
+        .title{
+            font-family: "GothamProBold";
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .icons{
+            margin-top: 30px;
+            a{
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                background: #6abfb5;
+                border-radius: 30px;
+                margin-right: 25px;
+                position: relative;
+                display: inline-block;
+                .fa{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
     h2{
         font-size: 30px;
         padding: 0;

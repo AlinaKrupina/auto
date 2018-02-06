@@ -109,7 +109,8 @@ h2 {
   text-align: center;
   font-size: 30px;
   font-family: "GothamProBold";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
 
 header {
   max-width: 1180px;
@@ -1516,6 +1517,9 @@ main {
       .vacancy-section .vacancy-detail div.date {
         text-align: right; }
 
+.map-section.section-contact div.map {
+  width: 100%; }
+
 .section-about {
   background: #e6f2f2 url(../img/pexels.png);
   padding: 45px 0 65px;
@@ -1545,6 +1549,67 @@ main {
 .form-section {
   background: #f6f8f8;
   padding: 60px 0; }
+  .form-section.contact {
+    background: url(../img/contact.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 115px 0; }
+  .form-section .contact-block {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 0; }
+    .form-section .contact-block > div {
+      width: -webkit-calc((100% - 30px)/3);
+      width: calc((100% - 30px)/3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-align-content: space-between;
+          -ms-flex-line-pack: justify;
+              align-content: space-between; }
+      .form-section .contact-block > div div, .form-section .contact-block > div p {
+        width: 100%; }
+    .form-section .contact-block .title {
+      font-family: "GothamProBold";
+      font-size: 24px;
+      margin-bottom: 15px; }
+    .form-section .contact-block .icons {
+      margin-top: 30px; }
+      .form-section .contact-block .icons a {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        background: #6abfb5;
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
+        margin-right: 25px;
+        position: relative;
+        display: inline-block; }
+        .form-section .contact-block .icons a .fa {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+    .form-section .contact-block p {
+      font-size: 14px;
+      line-height: 1.5; }
   .form-section h2 {
     font-size: 30px;
     padding: 0;
