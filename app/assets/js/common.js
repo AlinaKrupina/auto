@@ -2,6 +2,10 @@ $(document).ready(function() {
     $(".js-filter-tab").click(function(){
         $(this).parent().toggleClass('active');
     });
+    $(".exchange").click(function(){
+        $('body, .wrapper').toggleClass('overflow');
+        $('.user-panel .result').toggleClass('show');
+    });
     $(".main-slider.owl-carousel").owlCarousel({
         items:1,
         loop: true,
@@ -11,7 +15,7 @@ $(document).ready(function() {
         animateOut: 'fadeOut',
     });
     $('.js-number').inputmask({
-        mask: "+38 (999) 999-99-99",    
+        mask: "+38 (999) 999-99-99",
     });
 });
 function initMap() {
