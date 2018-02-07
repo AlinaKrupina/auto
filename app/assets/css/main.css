@@ -1639,61 +1639,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     padding: 115px 0; }
-  .form-section .contact-block {
-    margin: 0 auto;
-    max-width: 980px;
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 60px 0; }
-    .form-section .contact-block > div {
-      width: -webkit-calc((100% - 30px)/3);
-      width: calc((100% - 30px)/3);
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      -webkit-align-content: space-between;
-          -ms-flex-line-pack: justify;
-              align-content: space-between; }
-      .form-section .contact-block > div div,
-      .form-section .contact-block > div p {
-        width: 100%; }
-    .form-section .contact-block .title {
-      font-family: "GothamProBold";
-      font-size: 24px;
-      margin-bottom: 15px; }
-    .form-section .contact-block .icons {
-      margin-top: 30px; }
-      .form-section .contact-block .icons a {
-        color: #fff;
-        width: 30px;
-        height: 30px;
-        background: #6abfb5;
-        -webkit-border-radius: 30px;
-                border-radius: 30px;
-        margin-right: 25px;
-        position: relative;
-        display: inline-block; }
-        .form-section .contact-block .icons a .fa {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%); }
-    .form-section .contact-block p {
-      font-size: 14px;
-      line-height: 1.5; }
   .form-section h2 {
     font-size: 30px;
     padding: 0;
@@ -1738,9 +1683,9 @@ main {
       .form-section .send-form input.first,
       .form-section .send-form textarea.first {
         margin-bottom: 60px; }
-      .form-section .send-form input:hover, .form-section .send-form input:focus,
-      .form-section .send-form textarea:hover,
-      .form-section .send-form textarea:focus {
+      .form-section .send-form input:focus, .form-section .send-form input:hover,
+      .form-section .send-form textarea:focus,
+      .form-section .send-form textarea:hover {
         border: 1px solid #5ba2a0; }
     .form-section .send-form button {
       color: #fff;
@@ -1751,6 +1696,146 @@ main {
       background: #ed174c;
       border: none;
       margin: 40px auto 0; }
+
+.contact-block {
+  margin: 0 auto;
+  max-width: 820px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0; }
+  .contact-block > div {
+    width: -webkit-calc((100% - 30px)/3);
+    width: calc((100% - 30px)/3);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between; }
+    .contact-block > div div,
+    .contact-block > div p {
+      width: 100%; }
+  .contact-block .title {
+    font-family: "GothamProBold";
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .contact-block .icons {
+    margin-top: 30px; }
+    .contact-block .icons a {
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      background: #6abfb5;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      margin-right: 25px;
+      position: relative;
+      display: inline-block; }
+      .contact-block .icons a .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .contact-block p {
+    font-size: 14px;
+    line-height: 1.5; }
+
+.cooperation-section {
+  background: #fff; }
+  .cooperation-section .cooperation-block {
+    max-width: 820px;
+    width: 100%;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 60px 0 0; }
+    .cooperation-section .cooperation-block > * {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%; }
+      .cooperation-section .cooperation-block > * img {
+        padding: 0 5%;
+        width: 100%; }
+    .cooperation-section .cooperation-block p {
+      padding-right: 5%; }
+
+.information-section {
+  background: #eef6f5; }
+  .information-section .information-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 75px 0; }
+    .information-section .information-block > div {
+      width: 25%;
+      border-left: 1px solid #d7ebe9;
+      padding: 0 40px; }
+      .information-section .information-block > div:last-child {
+        border-right: 1px solid #d7ebe9; }
+      .information-section .information-block > div img {
+        margin: 0 auto;
+        max-width: 80%;
+        display: block; }
+    .information-section .information-block ul li {
+      list-style-position: inside;
+      line-height: 1.5; }
+
+.opt-section {
+  position: relative;
+  overflow: hidden; }
+  .opt-section:before {
+    content: '';
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, 0.01) 1%, #e3f8f9 100%);
+    background: -o-radial-gradient(center, ellipse, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, 0.01) 1%, #e3f8f9 100%);
+    background: radial-gradient(ellipse at center, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, 0.01) 1%, #e3f8f9 100%); }
+  .opt-section .opt-block {
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 0; }
+    .opt-section .opt-block > div {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top; }
+      .opt-section .opt-block > div img {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+        display: block; }
+    .opt-section .opt-block h1,
+    .opt-section .opt-block h2 {
+      font-size: 24px;
+      font-family: "GothamProBold";
+      text-align: left;
+      text-transform: none;
+      margin-bottom: 40px;
+      padding: 0; }
+    .opt-section .opt-block h2 {
+      margin-top: 80px; }
+    .opt-section .opt-block p.bold {
+      margin-bottom: 35px; }
 
 .search-section .search-block {
   max-width: 820px;
@@ -1787,7 +1872,7 @@ main {
   margin-bottom: 40px; }
   .search-section .search-form input {
     line-height: 60px;
-    padding: 0px 20px;
+    padding: 0 20px;
     display: inline-block;
     width: -webkit-calc(100% - 200px);
     width: calc(100% - 200px);
@@ -1798,8 +1883,8 @@ main {
     .search-section .search-form input:focus, .search-section .search-form input:hover {
       border: 1px solid #7ad0c5;
       border-right: none;
-      -webkit-box-shadow: 0 0px 30px 0 rgba(196, 229, 228, 0.5);
-              box-shadow: 0 0px 30px 0 rgba(196, 229, 228, 0.5); }
+      -webkit-box-shadow: 0 0 30px 0 rgba(196, 229, 228, 0.5);
+              box-shadow: 0 0 30px 0 rgba(196, 229, 228, 0.5); }
   .search-section .search-form button {
     cursor: pointer;
     line-height: 60px;
@@ -1825,7 +1910,7 @@ main {
     color: #fff;
     text-align: center;
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
     font-size: 16px;
     text-transform: uppercase;
     background: #7ad0c5;
@@ -2180,7 +2265,18 @@ footer {
         display: block;
         margin: 30px 0 0; }
         footer .footer-head .cabinet .subscribe p {
-          margin: 20px 0; } }
+          margin: 20px 0; }
+  .opt-section .opt-block > div {
+    width: 100%; }
+    .opt-section .opt-block > div img {
+      margin-top: 50px; }
+  .information-section .information-block > div {
+    width: 50%;
+    border: none; }
+    .information-section .information-block > div:nth-child(1), .information-section .information-block > div:nth-child(2) {
+      padding-bottom: 40px; }
+    .information-section .information-block > div:last-child {
+      border: none; } }
 
 @media (max-width: 900px) {
   header nav a {
