@@ -123,7 +123,15 @@ p {
 .bold {
     font-family: "GothamProBold";
 }
-
+.uppercase {
+    text-transform: uppercase;
+}
+.background-blue{
+    background: #f3f9f8;
+}
+.background-white-blue{
+    background: #f6f8f8;
+}
 .background-white {
     background: #fff;
 }
@@ -1359,50 +1367,177 @@ main {
 }
 
 .delivery {
-    background: #fff;
     padding: 65px 0;
     font-size: 0;
-
+    &-in{
+        display: flex;
+    }
+    h3{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
     .item {
         display: inline-block;
         width: calc(100% / 3);
-        text-transform: uppercase;
         border-left: 2px solid #d3ebe7;
+        font-size: 0;
         text-align: center;
-
-        &:nth-child(2) {
-            p {
-                width: calc(100% - 185px);
-            }
+        padding: 0 40px;
+        &-in{
+            display: inline;
         }
-
         &:last-child {
             border-right: 2px solid #d3ebe7;
         }
 
-        div {
-            display: inline;
+        .icon{
+            margin-right: 20px;
+            max-width: 40px;
+            max-height: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .text{
+            display: inline-block;
+            vertical-align: top;
             text-align: left;
-            font-size: 0;
+            max-width: calc(100% - 60px);
         }
-
-        img {
-            margin-right: 25px;
-            height: 30px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
         p {
-            display: inline-block;
-            vertical-align: middle;
-            width: calc(100% - 215px);
             font-size: 14px;
             line-height: 1.5;
         }
     }
 }
-
+.section-delivery-product{
+    background: url(../img/delivery-background1.png);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 70px;
+    &.second{
+        padding-top: 80px;
+        background: url(../img/delivery-background2.png);
+        background-position: center;
+        background-size: cover;
+        div h2{
+            &.title1:before{
+                background: url(../img/location-pin.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.title2:before{
+                background: url(../img/flyer.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    h1{
+        padding: 45px 0 60px;
+        font-size: 24px;
+        font-family: "GothamProBold";
+    }
+    .delivery-car1{
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 80px;
+        position: relative;
+        p{
+            width: 60%;
+        }
+        img{
+            position: absolute;
+            right: 80px;
+            width: 35%;
+            bottom: -20px;
+        }
+    }
+    .delivery-car2{
+        margin: 45px auto 0px;
+        max-width: 980px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & > div{
+            width: calc(50% - 10px);
+            padding: 50px 80px;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        h2{
+            font-size: 16px;
+            padding: 0 0 35px;
+            text-align: left;
+            position: relative;
+            &.title1:before{
+                background: url(../img/money.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.title2:before{
+                background: url(../img/clock.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:before{
+                content:'';
+                position: absolute;
+                width: 36px;
+                height: 30px;
+                left: -55px;
+                top: -10px;
+            }
+        }
+    }
+}
+.attention-section{
+    padding: 55px 0;
+    h4{
+        color: #45948b;
+        font-size: 16px;
+    }
+    .attention{
+        border: 1px solid #ed174c;
+        padding: 35px 50px;
+        margin: 35px auto 50px;
+        font-size: 0;
+        max-width: 1000px;
+        img{
+            display: inline-block;
+            vertical-align: top;
+            width: 95px;
+            margin-right: 45px;
+        }
+        p{
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 140px);
+        }
+        &-text{
+            margin: 0 auto;
+            max-width: 830px;
+            width: 100%;
+            p{
+                margin-bottom: 10px;
+            }
+            ul{
+                margin-bottom: 10px;
+                color: #2c282b;
+                li{
+                    line-height: 1.5;
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+}
 .top-blue {
     background: #f6f8f8;
     position: relative;
@@ -2620,11 +2755,6 @@ footer {
         }
     }
 
-    .delivery .item p,
-    .delivery .item p:nth-child(2) {
-        width: calc(100% - 100px);
-    }
-
     .section-news {
         .asphalt {
             bottom: 0;
@@ -2822,7 +2952,13 @@ footer {
         width: calc(100% - 100px);
         margin: 0 auto 20px;
     }
-
+    .section-description .img {
+        width: 100%;
+        max-width: 500px;
+        img{
+            padding: 30px 0 0;
+        }
+    }
     .section-description .description-in {
         width: 100%;
     }
@@ -2856,7 +2992,15 @@ footer {
             }
         }
     }
-
+    .delivery{
+        .item{
+            padding: 0 20px;
+        }
+    }
+    .section-delivery-product .delivery-car2 > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .section-news {
         .section-in {
             .news-items .item {

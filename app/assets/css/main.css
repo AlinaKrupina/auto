@@ -114,6 +114,15 @@ p {
 .bold {
   font-family: "GothamProBold"; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.background-blue {
+  background: #f3f9f8; }
+
+.background-white-blue {
+  background: #f6f8f8; }
+
 .background-white {
   background: #fff; }
 
@@ -1168,37 +1177,164 @@ main {
     padding-left: 10%; }
 
 .delivery {
-  background: #fff;
   padding: 65px 0;
   font-size: 0; }
+  .delivery-in {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .delivery h3 {
+    font-size: 16px;
+    margin-bottom: 40px; }
   .delivery .item {
     display: inline-block;
     width: -webkit-calc(100% / 3);
     width: calc(100% / 3);
-    text-transform: uppercase;
     border-left: 2px solid #d3ebe7;
-    text-align: center; }
-    .delivery .item:nth-child(2) p {
-      width: -webkit-calc(100% - 185px);
-      width: calc(100% - 185px); }
+    font-size: 0;
+    text-align: center;
+    padding: 0 40px; }
+    .delivery .item-in {
+      display: inline; }
     .delivery .item:last-child {
       border-right: 2px solid #d3ebe7; }
-    .delivery .item div {
-      display: inline;
+    .delivery .item .icon {
+      margin-right: 20px;
+      max-width: 40px;
+      max-height: 30px;
+      display: inline-block;
+      vertical-align: top; }
+    .delivery .item .text {
+      display: inline-block;
+      vertical-align: top;
       text-align: left;
-      font-size: 0; }
-    .delivery .item img {
-      margin-right: 25px;
-      height: 30px;
-      display: inline-block;
-      vertical-align: middle; }
+      max-width: -webkit-calc(100% - 60px);
+      max-width: calc(100% - 60px); }
     .delivery .item p {
-      display: inline-block;
-      vertical-align: middle;
-      width: -webkit-calc(100% - 215px);
-      width: calc(100% - 215px);
       font-size: 14px;
       line-height: 1.5; }
+
+.section-delivery-product {
+  background: url(../img/delivery-background1.png);
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 70px; }
+  .section-delivery-product.second {
+    padding-top: 80px;
+    background: url(../img/delivery-background2.png);
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .section-delivery-product.second div h2.title1:before {
+      background: url(../img/location-pin.svg);
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .section-delivery-product.second div h2.title2:before {
+      background: url(../img/flyer.svg);
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+  .section-delivery-product h1 {
+    padding: 45px 0 60px;
+    font-size: 24px;
+    font-family: "GothamProBold"; }
+  .section-delivery-product .delivery-car1 {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 80px;
+    position: relative; }
+    .section-delivery-product .delivery-car1 p {
+      width: 60%; }
+    .section-delivery-product .delivery-car1 img {
+      position: absolute;
+      right: 80px;
+      width: 35%;
+      bottom: -20px; }
+  .section-delivery-product .delivery-car2 {
+    margin: 45px auto 0px;
+    max-width: 980px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .section-delivery-product .delivery-car2 > div {
+      width: -webkit-calc(50% - 10px);
+      width: calc(50% - 10px);
+      padding: 50px 80px; }
+      .section-delivery-product .delivery-car2 > div p {
+        margin-bottom: 10px; }
+    .section-delivery-product .delivery-car2 h2 {
+      font-size: 16px;
+      padding: 0 0 35px;
+      text-align: left;
+      position: relative; }
+      .section-delivery-product .delivery-car2 h2.title1:before {
+        background: url(../img/money.svg);
+        -webkit-background-size: contain;
+                background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .section-delivery-product .delivery-car2 h2.title2:before {
+        background: url(../img/clock.svg);
+        -webkit-background-size: contain;
+                background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .section-delivery-product .delivery-car2 h2:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 30px;
+        left: -55px;
+        top: -10px; }
+
+.attention-section {
+  padding: 55px 0; }
+  .attention-section h4 {
+    color: #45948b;
+    font-size: 16px; }
+  .attention-section .attention {
+    border: 1px solid #ed174c;
+    padding: 35px 50px;
+    margin: 35px auto 50px;
+    font-size: 0;
+    max-width: 1000px; }
+    .attention-section .attention img {
+      display: inline-block;
+      vertical-align: top;
+      width: 95px;
+      margin-right: 45px; }
+    .attention-section .attention p {
+      display: inline-block;
+      vertical-align: top;
+      width: -webkit-calc(100% - 140px);
+      width: calc(100% - 140px); }
+    .attention-section .attention-text {
+      margin: 0 auto;
+      max-width: 830px;
+      width: 100%; }
+      .attention-section .attention-text p {
+        margin-bottom: 10px; }
+      .attention-section .attention-text ul {
+        margin-bottom: 10px;
+        color: #2c282b; }
+        .attention-section .attention-text ul li {
+          line-height: 1.5;
+          list-style-position: inside; }
 
 .top-blue {
   background: #f6f8f8;
@@ -2178,10 +2314,6 @@ footer {
       padding-bottom: 25px; }
       .section-contact .contact-in .office-in div p {
         margin-bottom: 5px; }
-  .delivery .item p,
-  .delivery .item p:nth-child(2) {
-    width: -webkit-calc(100% - 100px);
-    width: calc(100% - 100px); }
   .section-news .asphalt {
     bottom: 0; }
   .section-news .section-in {
@@ -2309,6 +2441,11 @@ footer {
     width: -webkit-calc(100% - 100px);
     width: calc(100% - 100px);
     margin: 0 auto 20px; }
+  .section-description .img {
+    width: 100%;
+    max-width: 500px; }
+    .section-description .img img {
+      padding: 30px 0 0; }
   .section-description .description-in {
     width: 100%; }
   .pagination .buttons {
@@ -2337,6 +2474,11 @@ footer {
       .section-contact .contact-in .office-in div {
         width: 50%;
         padding-bottom: 25px; }
+  .delivery .item {
+    padding: 0 20px; }
+  .section-delivery-product .delivery-car2 > div {
+    width: 100%;
+    margin-bottom: 20px; }
   .section-news .section-in .news-items .item .description {
     font-size: 13px; }
   .section-news .section-in .news-items .item .read {
