@@ -3612,8 +3612,54 @@ main {
     background: url('../img/forgot-background.png');
     background-size: cover;
     background-position-y: top;
+    &.step-second{
+        display: none;
+    }
     .send{
         margin: 30px 0;
+    }
+}
+.history-section{
+    padding-bottom: 60px;
+    .history{
+        &-block{
+            width: 100%;
+            max-width: 820px;
+            margin: 0 auto;
+            h1{
+                padding: 50px 0 20px;
+                color: #45948b;
+            }
+        }
+        &-items{
+            margin-top: 20px;
+            padding: 25px 20px;
+            background: #fff;
+            border: 1px solid #d2ebe4;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div:nth-child(1){
+                width: 190px;
+            }
+            div:nth-child(2){
+                width: 240px;
+            }
+            .date{
+                color: #45948b;
+            }
+            p:nth-child(1){
+                margin-bottom: 15px;
+            }
+            .view-order{
+                line-height: 60px;
+                text-align: center;
+                width: 240px;
+                color: #000;
+                font-size: 16px;
+                background: #d4ebe7;
+            }
+        }
     }
 }
 footer {
