@@ -107,28 +107,39 @@
             </div>
         </div>
         <main>
-            <section class="login-section background-white-blue">
+            <section class="login-section forgot step-first">
                 <div class="section-in">
-                    <h1 class="bold">Вход в магазин AUTO24</h1>
+                    <h1 class="bold">Востановление пароля</h1>
                     <div class="login-block">
                         <form action="#">
-                            <label class="bold">Логин</label>
-                            <input type="text" class="margin-b35" value="GoodFilter">
-                            <label class="bold">Пароль</label>
-                            <input type="password" class="password" value="GoodFilter">
-                            <div class="login-pass">
-                                <div class="custom-checkmark remember-password">
-                                    <input id="remember" type="checkbox" >
-                                    <label class="checkbox-label" for="remember">Запомнить пароль</label>
-                                </div>
-                                <a href="/forgot">Забыли пароль?</a>
-                            </div>
-                            <button type="submit" class="login-send bold uppercase">Отправить</button>
-                            <p class="new-user margin-b15">Для нового пользователя доступна</p>
-                            <a href="#" class="registration uppercase bold">Регистрация</a>
+                            <p>Если вы забыли пароль, введите свой E-Mail. Контрольная строка для смены пароля, а также ваши регистрационные данные, будут отправлены на ваш E-Mail.</p>
+                            <p class="send bold">Выслать контрольную строку</p>
+                            <label class="bold">E-Mail:</label>
+                            <input type="email" value="GoodFilter@gmail.com">
+                            <!-- <button type="submit" class="login-send bold uppercase">Выслать</button> -->
+                            <p class="js-forgot-button login-send bold uppercase">Выслать</p>
+                            <a href="#" class="registration uppercase bold">Войти</a>
                         </form>
                     </div>
-                    <img class="login-shadow" onkeypress=""src="/assets/img/form-shadow.png" alt="form-shadow">
+                </div>
+            </section>
+            <section class="login-section forgot step-second">
+                <div class="section-in">
+                    <h1 class="bold">Востановление пароля</h1>
+                    <div class="login-block">
+                        <form action="#">
+                            <p>На ваш адрес электронной почты мы выслали код подтверждения, введите этот код в поле ниже, введите новый пароль, его подтверждение и нажмите кнопку «Установить пароль». Код подтверждения действителен в течение 10 мин.</p>
+                            <p class="send bold">Выслать контрольную строку</p>
+                            <label class="bold">Код подтверждения</label>
+                            <input type="text" class="margin-b35" value="GoodFilter@gmail.com">
+                            <label class="bold">Новый пароль</label>
+                            <input type="password" class="margin-b35" value="GoodFilter@gmail.com">
+                            <label class="bold">Подтверждение пароля</label>
+                            <input type="password" value="GoodFilter@gmail.com">
+                            <button type="submit" class="login-send bold uppercase">Установить пароль</button>
+                            <a href="#" class="registration uppercase bold">Войти</a>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>

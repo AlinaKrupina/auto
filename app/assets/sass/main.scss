@@ -144,6 +144,14 @@ p {
     background: #fff;
 }
 
+.margin-b15{
+    margin-bottom: 15px;
+}
+
+.margin-b35{
+    margin-bottom: 35px;
+}
+
 button:focus,
 input:focus,
 textarea:focus {
@@ -3516,6 +3524,10 @@ main {
         padding: 65px 0 25px;
         font-size: 24px;
         color: #000;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 820px;
+        display: block;
     }
     .login{
         &-shadow{
@@ -3547,9 +3559,6 @@ main {
                 line-height: 48px;
                 padding: 0 20px;
                 font-size: 16px;
-                &.login{
-                    margin-bottom: 35px;
-                }
                 &:hover, &:focus{
                     border: 1px solid #7acfc5;
                 }
@@ -3582,20 +3591,29 @@ main {
             border: none;
             cursor: pointer;
         }
-        &-new-user{
-            text-align: center;
-            p{
-                font-size: 14px;
-                margin-bottom: 15px;
-            }
-            .registration{
-                font-size: 14px;
-                color: #ed174c;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
+    }
+    .new-user{
+        font-size: 14px;
+        text-align: center;
+    }
+    .registration{
+        font-size: 14px;
+        color: #ed174c;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            text-decoration: underline;
         }
+    }
+}
+.forgot{
+    background: url('../img/forgot-background.png');
+    background-size: cover;
+    background-position-y: top;
+    .send{
+        margin: 30px 0;
     }
 }
 footer {

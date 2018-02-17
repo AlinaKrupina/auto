@@ -129,6 +129,12 @@ p {
 .background-white {
   background: #fff; }
 
+.margin-b15 {
+  margin-bottom: 15px; }
+
+.margin-b35 {
+  margin-bottom: 35px; }
+
 button:focus,
 input:focus,
 textarea:focus {
@@ -2905,7 +2911,11 @@ main {
   .login-section h1 {
     padding: 65px 0 25px;
     font-size: 24px;
-    color: #000; }
+    color: #000;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 820px;
+    display: block; }
   .login-section .login-shadow {
     margin: 30px auto 0;
     width: 100%;
@@ -2932,8 +2942,6 @@ main {
       line-height: 48px;
       padding: 0 20px;
       font-size: 16px; }
-      .login-section .login-block input.login {
-        margin-bottom: 35px; }
       .login-section .login-block input:hover, .login-section .login-block input:focus {
         border: 1px solid #7acfc5; }
   .login-section .login-pass {
@@ -2967,16 +2975,28 @@ main {
     background: #ed174c;
     border: none;
     cursor: pointer; }
-  .login-section .login-new-user {
+  .login-section .new-user {
+    font-size: 14px;
     text-align: center; }
-    .login-section .login-new-user p {
-      font-size: 14px;
-      margin-bottom: 15px; }
-    .login-section .login-new-user .registration {
-      font-size: 14px;
-      color: #ed174c; }
-      .login-section .login-new-user .registration:hover {
-        text-decoration: underline; }
+  .login-section .registration {
+    font-size: 14px;
+    color: #ed174c;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .login-section .registration:hover {
+      text-decoration: underline; }
+
+.forgot {
+  background: url("../img/forgot-background.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position-y: top; }
+  .forgot .send {
+    margin: 30px 0; }
 
 footer {
   background: #4e4e4e;

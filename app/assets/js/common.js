@@ -1,14 +1,23 @@
 $(document).ready(function() {
+
     $(".js-filter-tab").click(function() {
         $(this).parent().toggleClass('active');
     });
+
+    $(".js-forgot-button").click(function(){
+        $('.forgot.step-first').hide();
+        $('.forgot.step-second').show();
+    });
+
     $(".exchange").click(function() {
         $('body, .wrapper').toggleClass('overflow');
         $('.user-panel .result').toggleClass('show');
     });
+
     $('.document-tabs .close').click(function(){
         $('#instructions input:checked').prop('checked', false);
     });
+
     $(".main-slider.owl-carousel").owlCarousel({
         items: 1,
         loop: true,
