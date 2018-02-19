@@ -9,6 +9,15 @@ $(document).ready(function() {
         $('.forgot.step-second').show();
     });
 
+    $('.js-remove').click(function(){
+        var a = +$(this).parents('.js-counter').find('input').val();
+        $(this).parents('.js-counter').find('input').val(a - 1);
+    });
+    $('.js-add').click(function(){
+        var a = +$(this).parents('.js-counter').find('input').val();
+        $(this).parents('.js-counter').find('input').val(a + 1);
+    });
+
     $(".exchange").click(function() {
         $('body, .wrapper').toggleClass('overflow');
         $('.user-panel .result').toggleClass('show');

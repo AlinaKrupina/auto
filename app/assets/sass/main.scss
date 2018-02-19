@@ -4081,6 +4081,253 @@ main {
         }
     }
 }
+.basket-section{
+    padding: 45px 0;
+    .basket{
+        &-block{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 920px;
+        }
+        &-delivery{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            p{
+                font-size: 14px;
+                display: inline-block;
+                color: #000;
+            }
+            & > p,
+            & > div{
+                width: 47%;
+            }
+            img{
+                display: inline-block;
+                max-width: 17px;
+                max-height: 17px;
+                margin-right: 15px;
+                vertical-align: top;
+            }
+            .button{
+                background: #fff;
+                text-align: center;
+                line-height: 60px;
+                width: 100%;
+                border: 1px solid #7ad0c6;
+                font-size: 14px;
+                display: inline-block;
+            }
+            .arrow{
+                stroke: #45938b;
+                width: 12px;
+                margin-left: 10px;
+                display: inline-block;
+                .st0 {
+                    fill: none;
+                    stroke-width: 24;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                }
+            }
+            span{
+                margin-bottom: 10px;
+                display: block;
+                p{
+                    width: calc(100% - 35px);
+                    display: inline-block;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    h1{
+        color: #45948b;
+        padding: 0;
+    }
+    h3{
+        font-size: 16px;
+        width: 100%;
+        color: #45948b;
+        padding: 30px 0 20px;
+        border-top: 1px solid #d4ebe8;
+    }
+    p.description{
+        margin: 15px 0 45px;
+        font-size: 14px;
+    }
+}
+.basket{
+    &-table{
+        padding-top: 35px 0;
+        .head{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            & p{
+                line-height: 1;
+            }
+        }
+    }
+    &-item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        height: 94px;
+        margin-bottom: 5px;
+        border: 1px solid #d4ebe8;
+        position: relative;
+        .basket-delete{
+            background: #45948b;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    &-img{
+        width: 16%;
+        height: 100%;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            padding: 15px 10px 15px 20px;
+        }
+    }
+    &-title{
+        width: 32%;
+        padding-right: 30px;
+        font-size: 14px;
+    }
+    &-amount{
+        width: 14%;
+        & > div{
+            display: inline-block;
+            text-align: center;
+        }
+        .counter{
+            margin-bottom: 15px;
+            .button{
+                cursor: pointer;
+                display: inline-block;
+            }
+            svg{
+                width: 11px;
+                height: auto;
+            }
+            input{
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;
+                border: 1px solid #7ad0c6;
+                font-size: 16px;
+                width: 40px;
+                line-height: 30px;
+                margin: 0 10px;
+                text-align: center;
+
+            }
+        }
+        .available{
+            display: flex;
+            justify-content: center;
+            svg{
+                fill: #45948b;
+                width: auto;
+                height: 10px;
+                margin-right: 5px;
+            }
+            span{
+                font-size: 11px;
+            }
+        }
+    }
+    &-sale{
+        width: 14%;
+    }
+    &-price{
+        width: 14%;
+    }
+    &-delete{
+        width: 10%;
+        text-align: center;
+        height: 100%;
+        img{
+            width: 33%;
+            display: block;
+            margin: 15px auto 10px;
+        }
+    }
+    &-coupon{
+        background: #d4ebe8;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        align-items: center;
+        margin-bottom: 30px;
+        & > *{
+            width: calc((100% - 40px)/3)
+        }
+        input, a{
+            line-height: 60px;
+            text-align: center;
+            font-size: 14px;
+            background: #fff;
+            text-transform: uppercase;
+            border: 1px solid #7ad0c6;
+        }
+        input{
+            margin: 0 20px;
+        }
+    }
+    &-footer{
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > *{
+            width: calc((100% - 40px)/3);
+            margin-bottom: 25px;
+        }
+        p:nth-child(1),
+        p:nth-child(4){
+            text-align: left;
+        }
+        p:nth-child(2),
+        p:nth-child(5){
+            text-align: center;
+            margin: 0 20px;
+        }
+        p:nth-child(3),
+        p:nth-child(6){
+            text-align: right;
+        }
+    }
+    &-button{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .continue{
+            color: #000;
+            background: #fff;
+            line-height: 60px;
+            text-align: center;
+            width: 285px;
+            font-size: 14px;
+            border: 1px solid #7ad0c6;
+        }
+        .checkout{
+            color: #fff;
+            background: #ed174c;
+            line-height: 60px;
+            text-align: center;
+            width: 285px;
+            font-size: 14px;
+        }
+    }
+}
 .commission-section{
     padding: 45px 0 60px;
     .commission{
