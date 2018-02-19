@@ -91,6 +91,8 @@ $(document).ready(function() {
     });
 
     $('.js-number').inputmask({mask: "+38 (999) 999-99-99"});
+
+    $('.chosen-select').chosen();
 });
 function initMap() {
     var uluru = {

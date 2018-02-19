@@ -5,6 +5,7 @@
         <title>Avto 24</title>
         <link rel="stylesheet" href="/assets/css/libs.min.css">
         <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
@@ -107,18 +108,196 @@
             </div>
         </div>
         <main>
-            <div>
-                <a href="/cabinet/history">История заказов</a>
+            <div class="breadcrumbs">
+                <div class="section-in">
+                    <a href="/">Главная</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Мой кабинет</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Оформление заказа</a>
+                </div>
             </div>
-            <div>
-                <a href="/cabinet/order">Заказ</a>
-            </div>
-            <div>
-                <a href="/cabinet/detail">Детальная</a>
-            </div>
-            <div>
-                <a href="/cabinet/commission">Заказ детальная сейчас</a>
-            </div>
+            <section class="commission-section top-blue">
+                <div class="section-in">
+                    <div class="commission-block">
+                        <h1 class="bold uppercase">Оформление заказа</h1>
+                        <p class="description"> Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически. Если все заполнено верно, нажмите кнопку "Оформить заказ".</p>
+                        <div class="commission-tabs">
+                            <div class="commission-item">
+                                <div class="commission-item-title">
+                                    <p class="title bold">Покупатель</p>
+                                    <p class="change bold">Изменить</p>
+                                </div>
+                                <div class="commission-item-in">
+                                    <form class="commission-buyer" action="#">
+                                        <div class="field-group">
+                                            <p class="bold">Имя Фамилия *</p>
+                                            <input type="text" required placeholder="Введите имя" value="Миримакс Олег">
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">Тип плательщика</p>
+                                            <div class="checkbox">
+                                                <div>
+                                                    <input id="buyer1" name="buyer" type="radio" />
+                                                    <label for="buyer1">Физическое лицо</label>
+                                                </div>
+                                                <div>
+                                                    <input id="buyer2" name="buyer" type="radio" />
+                                                    <label for="buyer2">Юридическое лицо</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">Телефон</p>
+                                            <input type="text" class="js-number" placeholder="Введите номер">
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">E-mail *</p>
+                                            <input type="text" required placeholder="Введите e-mail" value="goodfilter@gmail.com">
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">Комментарии к заказу:</p>
+                                            <textarea name="comment" placeholder="Текст комментария"></textarea>
+                                        </div>
+                                        <div class="field-group navigation">
+                                            <p class="next bold uppercase">Далее</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="commission-item">
+                                <div class="commission-item-title">
+                                    <p class="title bold">Доставка</p>
+                                    <p class="change bold">Изменить</p>
+                                </div>
+                                <div class="commission-item-in">
+                                    <div class="commission-delivery">
+                                        <div class="field-group">
+                                            <p class="bold">Ваш город</p>
+                                            <select class="city chosen-select">
+                                                <option>Киев</option>
+                                                <option>Днепр</option>
+                                                <option>Харьков</option>
+                                                <option>Одесса</option>
+                                                <option>Львов</option>
+                                            </select>
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">Служба доcтавки</p>
+                                            <select class="service chosen-select">
+                                                <option>Новая почта</option>
+                                                <option>Днепр</option>
+                                                <option>Харьков</option>
+                                                <option>Одесса</option>
+                                                <option>Львов</option>
+                                            </select>
+                                        </div>
+                                        <div class="field-group">
+                                            <p class="bold">Отделение доcтавки</p>
+                                            <select class="office chosen-select">
+                                                <option>Отделение 48 (метро Олимпийская)</option>
+                                                <option>Днепр</option>
+                                                <option>Харьков</option>
+                                                <option>Одесса</option>
+                                                <option>Львов</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="navigation">
+                                        <p class="prev bold uppercase">Назад</p>
+                                        <p class="next bold uppercase">Далее</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="commission-item fail">
+                                <div class="commission-item-title">
+                                    <p class="title bold">Оплата</p>
+                                    <p class="change bold">Изменить</p>
+                                </div>
+                                <div class="commission-item-in payment">
+                                    <p class="bold">Способы оплаты</p>
+                                    <div class="payment-methods checkbox">
+                                        <span>
+                                            <input id="payment1" name="payment" type="radio" />
+                                            <label for="payment1">Наложенный платеж</label>
+                                        </span>
+                                        <span>
+                                            <input id="payment2" name="payment" type="radio" />
+                                            <label for="payment2">Visa/MasterCard</label>
+                                        </span>
+                                        <span>
+                                            <input id="payment3" name="payment" type="radio" />
+                                            <label for="payment3">Приват 24</label>
+                                        </span>
+                                    </div>
+                                    <div class="navigation">
+                                        <p class="prev bold uppercase">Назад</p>
+                                        <p class="next bold uppercase">Далее</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="commission-item last">
+                                <div class="commission-item-title">
+                                    <p class="title bold">Товары в заказе</p>
+                                    <p class="change bold">Изменить</p>
+                                </div>
+                                <div class="commission-item-in">
+                                    <div class="order-detail-table">
+                                        <div class="head">
+                                            <p class="bold">Товар</p>
+                                            <p class="bold">Количество</p>
+                                            <p class="bold">Цена</p>
+                                        </div>
+                                        <div class="background-white">
+                                            <figure class="product-img">
+                                                <img src="/assets/img/prod1.png" alt="product-img">
+                                            </figure>
+                                            <p class="product-title">Cинтетическое моторное масло Q8 4л Q8-10W50S-4L</p>
+                                            <p class="product-amount">1 шт.</p>
+                                            <p class="product-price">250 грн.</p>
+                                        </div>
+                                        <div class="background-white">
+                                            <figure class="product-img">
+                                                <img src="/assets/img/prod2.png" alt="product-img">
+                                            </figure>
+                                            <p class="product-title">Cинтетическое моторное масло Q8 4л Q8-10W50S-4L 546654 лоылвао длыва 4545</p>
+                                            <p class="product-amount">1 шт.</p>
+                                            <p class="product-price">250 грн.</p>
+                                        </div>
+                                        <div class="background-white">
+                                            <figure class="product-img">
+                                                <img src="/assets/img/prod3.png" alt="product-img">
+                                            </figure>
+                                            <p class="product-title">Cинтетическое моторное масло</p>
+                                            <p class="product-amount">1 шт.</p>
+                                            <p class="product-price">250 грн.</p>
+                                        </div>
+                                        <div class="coupon">
+                                            <p class="bold">У вас есть код купона?</p>
+                                            <input type="text" placeholder="Ваш код">
+                                        </div>
+                                        <div class="footer">
+                                            <p class="bold">Вы покупаете</p>
+                                            <p class="bold">3 товара</p>
+                                            <p class="bold">12 500 грн</p>
+                                            <p>Ориентировочная стоимость доставки</p>
+                                            <p></p>
+                                            <p>200 грн</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="commission-order bold uppercase">Оформить заказ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="section-in">
@@ -310,7 +489,9 @@
             </div>
         </footer>
         <script src="/assets/js/libs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.3/chosen.jquery.min.js"></script>
         <script src="/assets/js/common.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbMK9HActSsz0ZlU1-G59TLPGz4TPzDn0&callback=initMap"></script>
     </body>
