@@ -107,28 +107,87 @@
             </div>
         </div>
         <main>
-            <section class="login-section background-white-blue">
+            <section class="registration-section top-blue">
                 <div class="section-in">
-                    <h1 class="bold">Вход в магазин AUTO24</h1>
-                    <div class="login-block">
-                        <form action="#">
-                            <label class="bold">Логин</label>
-                            <input type="text" class="margin-b35" value="GoodFilter">
-                            <label class="bold">Пароль</label>
-                            <input type="password" class="password" value="GoodFilter">
-                            <div class="login-pass">
-                                <div class="custom-checkmark remember-password">
-                                    <input id="remember" type="checkbox" >
-                                    <label class="checkbox-label" for="remember">Запомнить пароль</label>
-                                </div>
-                                <a href="/forgot">Забыли пароль?</a>
+                    <div class="registration-block">
+                        <h1 class="bold uppercase">регистрация AUTO24</h1>
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1">Частное лицо</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2">Юридическое лицо</label>
+                        <form class="form" id="form1">
+                            <div class="field-group success">
+                                <p class="bold">Логин *</p>
+                                <input type="text" required placeholder="Введите логин" value="GoodFilter">
                             </div>
-                            <button type="submit" class="login-send bold uppercase">Отправить</button>
-                            <p class="new-user margin-b15">Для нового пользователя доступна</p>
-                            <a href="#" class="registration uppercase bold">Регистрация</a>
+                            <div class="field-group success">
+                                <p class="bold">Пароль *</p>
+                                <input type="password" required placeholder="Введите пароль" value="GoodFilter">
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Подтверждение пароля *</p>
+                                <input type="password" required placeholder="Повторите пароль" value="GoodFilter">
+                            </div>
+                            <div class="field-group success">
+                                <p class="bold">E-mail *</p>
+                                <input type="email" required placeholder="Введите e-mail" value="qweqwe@gmail.com">
+                            </div>
+                            <div class="field-group name">
+                                <p class="bold">Имя *</p>
+                                <input type="text" required placeholder="Введите имя" value="Олег">
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Фамилия *</p>
+                                <input type="text" required placeholder="Введите фамилию" value="Миримакс">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <button class="registration-send uppercase bold" type="submit" value="Submit">Регистрация</button>
+                            <p class="required-text">* Поля, обязательные для заполнения</p>
                         </form>
+
+                        <form class="form" id="form2">
+                            <div class="field-group success">
+                                <p class="bold">Код ЕДПРПУ *</p>
+                                <input type="text" required placeholder="Введите код ЕДПРПУ" value="КВ342356">
+                            </div>
+                            <div class="field-group success">
+                                <p class="bold">Название предприятия *</p>
+                                <input type="text" required placeholder="Введите название" value="GoodFilter">
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Сайт предприятия *</p>
+                                <input type="text" required placeholder="Повторите сайт" value="test.com">
+                            </div>
+                            <div class="field-group success border-t">
+                                <p class="bold">Логин *</p>
+                                <input type="text" required placeholder="Введите логин" value="GoodFilter">
+                            </div>
+                            <div class="field-group success">
+                                <p class="bold">Пароль *</p>
+                                <input type="password" required placeholder="Введите пароль" value="GoodFilter">
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Подтверждение пароля *</p>
+                                <input type="password" required placeholder="Повторите пароль" value="GoodFilter">
+                            </div>
+                            <div class="field-group success">
+                                <p class="bold">E-mail *</p>
+                                <input type="email" required placeholder="Введите e-mail" value="qweqwe@gmail.com">
+                            </div>
+                            <div class="field-group border-t">
+                                <p class="bold">Имя *</p>
+                                <input type="text" required placeholder="Введите имя" value="Олег">
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Фамилия *</p>
+                                <input type="text" required placeholder="Введите фамилию" value="Миримакс">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <button class="registration-send uppercase bold" type="submit" value="Submit">Регистрация</button>
+                            <p class="required-text">* Поля, обязательные для заполнения</p>
+                        </form>
+                        <img class="registration-shadow" src="/assets/img/form-shadow.png" alt="form-shadow">
                     </div>
-                    <img class="login-shadow" src="/assets/img/form-shadow.png" alt="form-shadow">
                 </div>
             </section>
         </main>
@@ -322,6 +381,7 @@
             </div>
         </footer>
         <script src="/assets/js/libs.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
         <script src="/assets/js/common.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbMK9HActSsz0ZlU1-G59TLPGz4TPzDn0&callback=initMap"></script>
