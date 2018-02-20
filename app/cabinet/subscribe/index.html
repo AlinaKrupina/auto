@@ -107,32 +107,70 @@
             </div>
         </div>
         <main>
-            <div class="section-in">
-                <div>
-                    <a href="/cabinet/registration">Регистрация</a>
-                </div>
-                <div>
-                    <a href="/cabinet/history">История заказов</a>
-                </div>
-                <div>
-                    <a href="/cabinet/order">Заказ</a>
-                </div>
-                <div>
-                    <a href="/cabinet/detail">Детальная</a>
-                </div>
-                <div>
-                    <a href="/cabinet/commission">Заказ детальная сейчас</a>
-                </div>
-                <div>
-                    <a href="/cabinet/compare">Сравнение</a>
-                </div>
-                <div>
-                    <a href="/cabinet/basket">Корзина</a>
-                </div>
-                <div>
-                    <a href="/cabinet/subscribe">Подписка</a>
+            <div class="breadcrumbs">
+                <div class="section-in">
+                    <a href="/">Главная</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Мой кабинет</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Подписка</a>
                 </div>
             </div>
+            <section class="subscribe-section top-blue">
+                <div class="section-in">
+                    <div class="subscribe-block">
+                        <h1 class="bold uppercase">Текущие заказы</h1>
+                        <p class="subscribe-description">Адрес подписки будет принадлежать пользователю: admin [admin].<br>
+                            Вы можете закончить сеанс, чтобы авторизоваться под другим пользователем.</p>
+                        <h3 class="bold uppercase">Настройки подписки</h3>
+                        <form action="#" class="subscribe-form">
+                            <div class="field-group">
+                                <p class="bold">Ваш e-mail*:</p>
+                                <div>
+                                    <input type="email" required placeholder="Введите e-mail" value="email@gmail.com">
+                                </div>
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Рубрики подписки*:</p>
+                                <div class="checkbox2">
+                                    <div class="custom-checkmark">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label class="checkbox-label" for="checkbox1">Новости магазина</label>
+                                    </div>
+                                    <div class="custom-checkmark">
+                                        <input id="checkbox2" type="checkbox">
+                                        <label class="checkbox-label" for="checkbox2">Акционный товар</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-group">
+                                <p class="bold">Предпочтительный формат</p>
+                                <div class="checkbox">
+                                    <div>
+                                        <input id="text" name="format" type="radio">
+                                        <label for="text">Текст</label>
+                                    </div>
+                                    <div>
+                                        <input id="html" name="format" type="radio">
+                                        <label for="html">HTML</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="subscribe-description">После добавления или изменения адреса подписки вам будет выслан код подтверждения.<br>Подписка будет не активной до ввода кода подтверждения.</p>
+                        <div class="subscribe-button">
+                            <a href="#" class="bold uppercase add">Добавить</a>
+                            <a href="#" class="bold uppercase reset">Сбросить</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="section-in">

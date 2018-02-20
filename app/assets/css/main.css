@@ -3594,6 +3594,94 @@ main {
     border: none;
     cursor: pointer; }
 
+.subscribe-section {
+  padding: 50px 0 60px; }
+  .subscribe-section h1 {
+    padding: 0 0 40px 0;
+    color: #45948b; }
+  .subscribe-section h3 {
+    color: #45948b;
+    font-size: 16px; }
+  .subscribe-section .subscribe-block {
+    margin: 0 auto;
+    max-width: 820px;
+    width: 100%; }
+  .subscribe-section .subscribe-form {
+    margin: 30px 0; }
+    .subscribe-section .subscribe-form .field-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 40px; }
+      .subscribe-section .subscribe-form .field-group input[type='email'] {
+        width: 50%;
+        padding: 0 20px;
+        line-height: 50px;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        font-size: 16px; }
+      .subscribe-section .subscribe-form .field-group p {
+        width: 260px;
+        padding-right: 20px; }
+        .subscribe-section .subscribe-form .field-group p + * {
+          width: -webkit-calc(100% - 260px);
+          width: calc(100% - 260px); }
+      .subscribe-section .subscribe-form .field-group .checkbox {
+        font-size: 0; }
+        .subscribe-section .subscribe-form .field-group .checkbox div {
+          display: inline-block;
+          vertical-align: middle;
+          width: 50%; }
+        .subscribe-section .subscribe-form .field-group .checkbox label {
+          font-size: 16px;
+          margin-left: 15px;
+          position: relative;
+          top: 3px; }
+      .subscribe-section .subscribe-form .field-group .checkbox2 {
+        font-size: 0; }
+        .subscribe-section .subscribe-form .field-group .checkbox2 div {
+          display: inline-block;
+          vertical-align: middle;
+          width: 50%;
+          margin-bottom: 0; }
+          .subscribe-section .subscribe-form .field-group .checkbox2 div label {
+            font-size: 16px; }
+  .subscribe-section .subscribe-description {
+    color: #000;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #d3ebe7;
+    margin-bottom: 35px; }
+  .subscribe-section .subscribe-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .subscribe-section .subscribe-button > * {
+      width: 280px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 16px; }
+    .subscribe-section .subscribe-button .add {
+      color: #fff;
+      background: #ed174c; }
+    .subscribe-section .subscribe-button .reset {
+      color: #000;
+      background: #fff;
+      border: 1px solid #d3ebe7; }
+
 .basket-section {
   padding: 45px 0; }
   .basket-section .basket-block {
