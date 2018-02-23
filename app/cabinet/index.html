@@ -107,7 +107,68 @@
             </div>
         </div>
         <main>
-            <div class="section-in">
+            <div class="breadcrumbs">
+                <div class="section-in">
+                    <a href="/">Главная</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Мой кабинет</a>
+                    <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.3 240.5" style="enable-background:new 0 0 261.3 240.5;" xml:space="preserve">
+                        <polyline class="st0" points="141,12 249.3,120.3 141,228.5 "/>
+                        <line class="st0" x1="12" y1="120.3" x2="236" y2="120.3"/>
+                    </svg>
+                    <a href="#">Персональные данные</a>
+                </div>
+            </div>
+            <section class="cabinet-section top-blue">
+                <div class="section-in">
+                    <div class="cabinet-block">
+                        <h1 class="bold uppercase">Персональные данные</h1>
+                        <div class="cabinet-in">
+                            <form action="#" class="cabinet-form">
+                                <div class="field-group">
+                                    <p class="bold">Имя. фамилия</p>
+                                    <input type="text" required placeholder="Введите имя и фамилию" value="Миримакс Олег">
+                                </div>
+                                <div class="field-group">
+                                    <p class="bold">Пароль*</p>
+                                    <input type="password" required placeholder="Введите пароль" value="email@gmail.com">
+                                </div>
+                                <div class="field-group">
+                                    <p class="bold">Подверждение пароля*</p>
+                                    <input type="password" required placeholder="Повторите пароль" value="email@gmail.com">
+                                </div>
+                                <div class="field-group">
+                                    <p class="bold">E-mail*:</p>
+                                    <input type="email" required placeholder="Введите e-mail" value="email@gmail.com">
+                                </div>
+                                <div class="field-group">
+                                    <p class="bold">Телефон</p>
+                                    <input class="js-number" type="text" required placeholder="Введите телефон" value="+38 066 555 33 22">
+                                </div>
+                                <div class="field-group">
+                                    <p class="bold">Адрес</p>
+                                    <input type="text" required placeholder="Введите адрес" value="м. Київ, б-р. Вільний, кв. 131">
+                                </div>
+                                <div class="cabinet-button">
+                                    <a href="#" class="bold uppercase save">Сохранить</a>
+                                    <a href="#" class="bold uppercase reset">Отменить</a>
+                                </div>
+                            </form>
+                            <div class="cabinet-basket">
+                                <figure>
+                                    <img src="/assets/img/basket.png" alt="basket">
+                                </figure>
+                                <p class="bold uppercase">В вашей корзине <br> 2 единиц товара</p>
+                                <a class="bold uppercase" href="/cabinet/commission">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="section-in">
                 <div>
                     <a href="/cabinet/registration">Регистрация</a>
                 </div>
@@ -132,7 +193,7 @@
                 <div>
                     <a href="/cabinet/subscribe">Подписка</a>
                 </div>
-            </div>
+            </div> -->
         </main>
         <footer>
             <div class="section-in">
@@ -325,6 +386,7 @@
         </footer>
         <script src="/assets/js/libs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
         <script src="/assets/js/common.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbMK9HActSsz0ZlU1-G59TLPGz4TPzDn0&callback=initMap"></script>
     </body>

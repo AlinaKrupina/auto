@@ -5019,7 +5019,84 @@ main {
         background: #45948b;
     }
 }
-
+.cabinet-section{
+    .cabinet{
+        &-in{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &-block{
+            padding: 50px 0 70px;
+            h1{
+                color: #45948b;
+                padding: 0 0 85px;
+            }
+        }
+        &-button{
+            display: flex;
+            justify-content: space-between;
+            & > *{
+                width: 280px;
+                line-height: 60px;
+                text-align: center;
+                font-size: 16px;
+            }
+            .save{
+                background: #ed174c;
+                color: #fff;
+            }
+            .reset{
+                background: #fff;
+                color: #000;
+                border: 1px solid #7ad0c5;
+            }
+        }
+        &-form{
+            width: calc(100% - 400px);
+            max-width: 600px;
+            .field-group{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                p{
+                    width: 160px;
+                    padding-right: 30px;
+                }
+                input{
+                    width: calc(100% - 160px);
+                    padding: 0 20px;
+                    line-height: 50px;
+                    background: none;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    font-size: 16px;
+                    &:hover, &:focus{
+                        background: #fff;
+                        border: 1px solid #7ad0c5;
+                    }
+                }
+            }
+        }
+        &-basket{
+            width: 280px;
+            background: #fff;
+            padding: 35px;
+            text-align: center;
+            height: 100%;
+            p{
+                margin: 30px 0;
+            }
+            a{
+                font-size: 16px;
+                background: #d4ebe8;
+                line-height: 50px;
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}
 footer {
     background: #4e4e4e;
     padding: 60px 0 120px;
