@@ -27,6 +27,13 @@ $(document).ready(function() {
         $('#instructions input:checked').prop('checked', false);
     });
 
+    // $(".js-compare.owl-carousel").owlCarousel({
+    //     items: 4,
+    //     loop: true,
+    //     margin: 10,
+    //     nav: true
+    // });
+
     $(".main-slider.owl-carousel").owlCarousel({
         items: 1,
         loop: true,

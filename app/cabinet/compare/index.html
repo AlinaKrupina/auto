@@ -122,26 +122,301 @@
                     <a href="#">Сравнение товаров</a>
                 </div>
             </div>
-            <section class="compare-section top-blue">
+            <section class="compare-section top-blue background-white">
                 <div class="section-in">
                     <div class="compare-block">
-                        <h1 class="bold uppercase">Сравнение товаров</h1>
-                        <div class="compare-head">
-                            <p>Товар</p>
-                            <p>Название товара</p>
-                            <p>Артикул</p>
-                            <p>Наличие в магазине</p>
-                            <p>Цена</p>
-                            <p></p>
-                            <p>Тип</p>
-                            <p>Тип транспорта</p>
-                            <p>Производитель</p>
-                            <p>Модель авто</p>
-                            <p>Масса</p>
-                            <p>Корпус</p>
+                        <div class="compare-block-head">
+                            <h1 class="bold uppercase">Сравнение товаров</h1>
+                            <span class="delete-all uppercase bold">Очистить все</span>
                         </div>
-                        <div class="compare-slider">
-
+                        <div class="compare-table">
+                            <div class="compare-head">
+                                <p class="product">Товар</p>
+                                <p class="title">Название товара</p>
+                                <p class="vendor-code">Артикул</p>
+                                <p class="available">Наличие в магазине</p>
+                                <p class="price">Цена</p>
+                                <p class="buy"></p>
+                                <p class="type">Тип</p>
+                                <p class="transport">Тип транспорта</p>
+                                <p class="manufacturer">Производитель</p>
+                                <p class="model">Модель авто</p>
+                                <p class="weight">Масса</p>
+                                <p class="case">Корпус</p>
+                                <p class="year">Год выпуска</p>
+                                <p class="guarantee">Гарантийный строк</p>
+                            </div>
+                            <div class="compare-item">
+                                <div class="product">
+                                    <img class="product-img" src="/assets/img/popular_item.png" alt="product">
+                                    <img class="product-delete" src="/assets/img/close.svg" alt="delete">
+                                </div>
+                                <div class="title">
+                                    <p>Фильтр масляный Mobis 26300-35503(504)</p>
+                                </div>
+                                <div class="vendor-code">
+                                    <p>Код: 1100713</p>
+                                </div>
+                                <div class="available">
+                                    <img src="/assets/img/available.svg" alt="available">
+                                    <span>в наличии</span>
+                                </div>
+                                <div class="price">
+                                    <p>250 грн.</p>
+                                </div>
+                                <a class="buy" href="#">
+                                    <img src="/assets/img/shop-cart.svg" alt="shop-cart">
+                                    <p>Купить в 1 клик</p>
+                                </a>
+                                <div class="type">
+                                    <p>Фильтр масляный</p>
+                                </div>
+                                <div class="transport">
+                                    <p>Легковой автомобиль</p>
+                                </div>
+                                <div class="manufacturer">
+                                    <p>Alco</p>
+                                </div>
+                                <div class="model">
+                                    <ul>
+                                        <li>AUDI Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Opel Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                </div>
+                                <div class="weight">
+                                    <p>0,366 кг</p>
+                                </div>
+                                <div class="case">
+                                    <p>Метал, Алюминий</p>
+                                </div>
+                                <div class="year">
+                                    <p>2016</p>
+                                </div>
+                                <div class="guarantee">
+                                    <p>2 года</p>
+                                </div>
+                            </div>
+                            <div class="compare-item">
+                                <div class="product">
+                                    <img class="product-img" src="/assets/img/prod1.png" alt="product">
+                                    <img class="product-delete" src="/assets/img/close.svg" alt="delete">
+                                </div>
+                                <div class="title">
+                                    <p>Фильтр масляный Mobis 26300-35503(504)</p>
+                                </div>
+                                <div class="vendor-code">
+                                    <p>Код: 1100713</p>
+                                </div>
+                                <div class="available">
+                                    <img src="/assets/img/available.svg" alt="available">
+                                    <span>в наличии</span>
+                                </div>
+                                <div class="price">
+                                    <p>250 грн.</p>
+                                </div>
+                                <a class="buy" href="#">
+                                    <img src="/assets/img/shop-cart.svg" alt="shop-cart">
+                                    <p>Купить в 1 клик</p>
+                                </a>
+                                <div class="type">
+                                    <p>Фильтр масляный</p>
+                                </div>
+                                <div class="transport">
+                                    <p>Легковой автомобиль</p>
+                                </div>
+                                <div class="manufacturer">
+                                    <p>Alco</p>
+                                </div>
+                                <div class="model">
+                                    <ul>
+                                        <li>AUDI Tuscon II (15-):</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Opel Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                    </ul>
+                                </div>
+                                <div class="weight">
+                                    <p>0,366 кг</p>
+                                </div>
+                                <div class="case">
+                                    <p>Метал, Алюминий</p>
+                                </div>
+                                <div class="year">
+                                    <p>2016</p>
+                                </div>
+                                <div class="guarantee">
+                                    <p>2 года</p>
+                                </div>
+                            </div>
+                            <div class="compare-item">
+                                <div class="product">
+                                    <img class="product-img" src="/assets/img/prod2.png" alt="product">
+                                    <img class="product-delete" src="/assets/img/close.svg" alt="delete">
+                                </div>
+                                <div class="title">
+                                    <p>Фильтр масляный Mobis 26300-35503(504)</p>
+                                </div>
+                                <div class="vendor-code">
+                                    <p>Код: 1100713</p>
+                                </div>
+                                <div class="available">
+                                    <img src="/assets/img/available.svg" alt="available">
+                                    <span>в наличии</span>
+                                </div>
+                                <div class="price">
+                                    <p>250 грн.</p>
+                                </div>
+                                <a class="buy" href="#">
+                                    <img src="/assets/img/shop-cart.svg" alt="shop-cart">
+                                    <p>Купить в 1 клик</p>
+                                </a>
+                                <div class="type">
+                                    <p>Фильтр масляный</p>
+                                </div>
+                                <div class="transport">
+                                    <p>Легковой автомобиль</p>
+                                </div>
+                                <div class="manufacturer">
+                                    <p>Alco</p>
+                                </div>
+                                <div class="model">
+                                    <ul>
+                                        <li>Opel Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                </div>
+                                <div class="weight">
+                                    <p>0,366 кг</p>
+                                </div>
+                                <div class="case">
+                                    <p>Метал, Алюминий</p>
+                                </div>
+                                <div class="year">
+                                    <p>2016</p>
+                                </div>
+                                <div class="guarantee">
+                                    <p>2 года</p>
+                                </div>
+                            </div>
+                            <div class="compare-item">
+                                <div class="product">
+                                    <img class="product-img" src="/assets/img/prod3.png" alt="product">
+                                    <img class="product-delete" src="/assets/img/close.svg" alt="delete">
+                                </div>
+                                <div class="title">
+                                    <p>Фильтр масляный Mobis 26300-35503(504)</p>
+                                </div>
+                                <div class="vendor-code">
+                                    <p>Код: 1100713</p>
+                                </div>
+                                <div class="available">
+                                    <img src="/assets/img/available.svg" alt="available">
+                                    <span>в наличии</span>
+                                </div>
+                                <div class="price">
+                                    <p>250 грн.</p>
+                                </div>
+                                <a class="buy" href="#">
+                                    <img src="/assets/img/shop-cart.svg" alt="shop-cart">
+                                    <p>Купить в 1 клик</p>
+                                </a>
+                                <div class="type">
+                                    <p>Фильтр масляный</p>
+                                </div>
+                                <div class="transport">
+                                    <p>Легковой автомобиль</p>
+                                </div>
+                                <div class="manufacturer">
+                                    <p>Alco</p>
+                                </div>
+                                <div class="model">
+                                    <ul>
+                                        <li>AUDI Tuscon II (15-):</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Opel Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                </div>
+                                <div class="weight">
+                                    <p>0,366 кг</p>
+                                </div>
+                                <div class="case">
+                                    <p>Метал, Алюминий</p>
+                                </div>
+                                <div class="year">
+                                    <p>2016</p>
+                                </div>
+                                <div class="guarantee">
+                                    <p>2 года</p>
+                                </div>
+                            </div>
+                            <div class="compare-item">
+                                <div class="product">
+                                    <img class="product-img" src="/assets/img/prod2.png" alt="product">
+                                    <img class="product-delete" src="/assets/img/close.svg" alt="delete">
+                                </div>
+                                <div class="title">
+                                    <p>Фильтр масляный Mobis 26300-35503(504)</p>
+                                </div>
+                                <div class="vendor-code">
+                                    <p>Код: 1100713</p>
+                                </div>
+                                <div class="available">
+                                    <img src="/assets/img/available.svg" alt="available">
+                                    <span>в наличии</span>
+                                </div>
+                                <div class="price">
+                                    <p>250 грн.</p>
+                                </div>
+                                <a class="buy" href="#">
+                                    <img src="/assets/img/shop-cart.svg" alt="shop-cart">
+                                    <p>Купить в 1 клик</p>
+                                </a>
+                                <div class="type">
+                                    <p>Фильтр масляный</p>
+                                </div>
+                                <div class="transport">
+                                    <p>Легковой автомобиль</p>
+                                </div>
+                                <div class="manufacturer">
+                                    <p>Alco</p>
+                                </div>
+                                <div class="model">
+                                    <ul>
+                                        <li>AUDI Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Opel Tuscon II (15-):</li>
+                                        <li>1700 CRDi, 104</li>
+                                        <li>KW1700 CRDi, 85 KW</li>
+                                    </ul>
+                                </div>
+                                <div class="weight">
+                                    <p>0,366 кг</p>
+                                </div>
+                                <div class="case">
+                                    <p>Метал, Алюминий</p>
+                                </div>
+                                <div class="year">
+                                    <p>2016</p>
+                                </div>
+                                <div class="guarantee">
+                                    <p>2 года</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
