@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 366" width="512" height="366">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5d647f } 
+		.shp1 { fill: #ffd100 } 
+		.shp2 { fill: #b8bac0 } 
+		.shp3 { fill: #8a8895 } 
+		.shp4 { fill: #ff4f19 } 
+		.shp5 { fill: #ff9500 } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp0" d="M472,0h-432c-22.05,0 -40,17.94 -40,40v288c0,22.06 17.95,40 40,40h432c22.06,0 40,-17.94 40,-40v-288c0,-22.06 -17.94,-40 -40,-40z" />
+		</g>
+		<g id="Layer">
+			<path id="Layer" class="shp1" d="M176,160h-96c-8.84,0 -16,-7.16 -16,-16v-64c0,-8.84 7.16,-16 16,-16h96c8.84,0 16,7.16 16,16v64c0,8.84 -7.16,16 -16,16z" />
+		</g>
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="shp2" d="M120,264h-40c-8.84,0 -16,-7.16 -16,-16v-8c0,-8.84 7.16,-16 16,-16h40c8.84,0 16,7.16 16,16v8c0,8.84 -7.16,16 -16,16z" />
+			</g>
+			<g id="Layer">
+				<path id="Layer" class="shp2" d="M224,264h-40c-8.84,0 -16,-7.16 -16,-16v-8c0,-8.84 7.16,-16 16,-16h40c8.84,0 16,7.16 16,16v8c0,8.84 -7.16,16 -16,16z" />
+			</g>
+			<g id="Layer">
+				<path id="Layer" class="shp2" d="M328,264h-40c-8.84,0 -16,-7.16 -16,-16v-8c0,-8.84 7.16,-16 16,-16h40c8.84,0 16,7.16 16,16v8c0,8.84 -7.16,16 -16,16z" />
+			</g>
+			<g id="Layer">
+				<path id="Layer" class="shp2" d="M432,264h-40c-8.84,0 -16,-7.16 -16,-16v-8c0,-8.84 7.16,-16 16,-16h40c8.84,0 16,7.16 16,16v8c0,8.84 -7.16,16 -16,16z" />
+			</g>
+		</g>
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="shp3" d="M232,312h-160c-4.42,0 -8,-3.58 -8,-8c0,-4.42 3.58,-8 8,-8h160c4.42,0 8,3.58 8,8c0,4.42 -3.58,8 -8,8z" />
+			</g>
+		</g>
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="shp3" d="M336,312h-72c-4.42,0 -8,-3.58 -8,-8c0,-4.42 3.58,-8 8,-8h72c4.42,0 8,3.58 8,8c0,4.42 -3.58,8 -8,8z" />
+			</g>
+		</g>
+		<g id="Layer">
+			<path id="Layer" class="shp4" d="M368,144c-8.79,9.82 -21.56,16 -35.78,16c-26.51,0 -48,-21.49 -48,-48c0,-26.51 21.49,-48 48,-48c14.21,0 26.98,6.18 35.77,15.99" />
+		</g>
+		<g id="Layer">
+			<path id="Layer" class="shp5" d="M192,120h-80v-16h80v-16h-80v-24h-16v96h16v-24h80z" />
+		</g>
+		<g id="Layer">
+			<path id="Layer" class="shp1" d="M448,112c0,-26.54 -21.46,-48 -48,-48c-26.54,0 -48,21.46 -48,48c0,26.54 21.46,48 48,48c26.54,0 48,-21.46 48,-48z" />
+		</g>
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>

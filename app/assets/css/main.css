@@ -4527,6 +4527,102 @@ main {
     display: inline-block;
     width: 100%; }
 
+.account-section .account-block {
+  padding: 50px 0; }
+  .account-section .account-block h1 {
+    padding: 0 0 50px;
+    color: #45948b; }
+
+.account-section .account-status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 50px 0;
+  border-bottom: 1px solid #8cc9c7; }
+  .account-section .account-status p {
+    font-size: 16px;
+    color: #2c282b;
+    margin-right: 20px; }
+  .account-section .account-status .amount {
+    font-size: 24px;
+    color: #ed174c; }
+
+.account-section .account-pay {
+  line-height: 60px;
+  display: block;
+  margin: 50px auto 0;
+  background: #ed174c;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px; }
+
+.account-section .account-payment {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  .account-section .account-payment-in {
+    width: 230px; }
+    .account-section .account-payment-in p.bold {
+      height: 50px; }
+  .account-section .account-payment-block {
+    width: 220px;
+    margin-top: 30px; }
+    .account-section .account-payment-block input {
+      width: 100%;
+      line-height: 50px;
+      font-size: 16px;
+      border: 1px solid #7acfc5;
+      padding: 0 20px; }
+    .account-section .account-payment-block div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .account-section .account-payment-block div p {
+        background: #8cc9c7;
+        text-align: center;
+        width: 100px;
+        line-height: 50px;
+        margin-top: 20px;
+        color: #fff;
+        cursor: pointer; }
+        .account-section .account-payment-block div p:hover, .account-section .account-payment-block div p.active {
+          background: #45948b; }
+  .account-section .account-payment .checkbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .account-section .account-payment .checkbox label {
+      font-size: 16px;
+      margin-left: 10px; }
+    .account-section .account-payment .checkbox + img {
+      height: 110px;
+      margin-left: 30px;
+      margin-top: 30px; }
+
 footer {
   background: #4e4e4e;
   padding: 60px 0 120px; }

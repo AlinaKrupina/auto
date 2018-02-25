@@ -5294,6 +5294,94 @@ main {
         }
     }
 }
+.account-section{
+    .account{
+        &-block{
+            padding: 50px 0;
+            h1{
+                padding: 0 0 50px;
+                color: #45948b;
+            }
+        }
+        &-status{
+            display: flex;
+            align-items: baseline;
+            padding: 50px 0;
+            border-bottom: 1px solid #8cc9c7;
+            p{
+                font-size: 16px;
+                color: #2c282b;
+                margin-right: 20px;
+            }
+            .amount{
+                font-size: 24px;
+                color: #ed174c;
+            }
+        }
+        &-pay{
+            line-height: 60px;
+            display: block;
+            margin: 50px auto 0;
+            background: #ed174c;
+            width: 280px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+        }
+        &-payment{
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            &-in{
+                width: 230px;
+                p.bold{
+                    height: 50px;
+                }
+            }
+            &-block{
+                width: 220px;
+                margin-top: 30px;
+                input{
+                    width: 100%;
+                    line-height: 50px;
+                    font-size: 16px;
+                    border: 1px solid #7acfc5;
+                    padding: 0 20px;
+                }
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    p{
+                        background: #8cc9c7;
+                        text-align: center;
+                        width: 100px;
+                        line-height: 50px;
+                        margin-top: 20px;
+                        color: #fff;
+                        cursor: pointer;
+                        &:hover, &.active{
+                            background: #45948b;
+                        }
+                    }
+                }
+            }
+            .checkbox{
+                display: flex;
+                align-items: center;
+                label{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                & + img{
+                    height: 110px;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
 footer {
     background: #4e4e4e;
     padding: 60px 0 120px;

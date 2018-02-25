@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 400" width="312" height="400">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #e4ecef } 
+		.shp1 { fill: #000000 } 
+		.shp2 { fill: #6eb1e1 } 
+	</style>
+	<path id="Layer" class="shp0" d="M291.6,0h-271.3c-11.2,0 -20.3,9.2 -20.3,20.3v358.4c0,11.2 9.2,20.3 20.3,20.3h270.9c11.2,0 20.3,-9.2 20.3,-20.3v-358.4c0.4,-11.1 -8.7,-20.3 -19.9,-20.3z" />
+	<path id="Layer" class="shp1" d="M106,64.8c6.2,-2.2 10.5,-8 10.5,-15c0,-8.9 -7.1,-16 -16,-16c-8.9,0 -16,7.1 -16,16c0,6.9 4.4,12.8 10.5,15c-13.6,2.4 -24,14.2 -24.5,28.5h60c-0.3,-14.3 -10.8,-26.1 -24.5,-28.5z" />
+	<g id="Layer">
+		<path id="Layer" class="shp2" d="M68.5,133h174.6v-16.6h-174.6z" />
+		<path id="Layer" class="shp2" d="M68.5,177.7h174.6v-16.6h-174.6z" />
+		<path id="Layer" class="shp2" d="M68.5,222.5h120v-16.6h-120z" />
+	</g>
+	<g id="Layer">
+		<path id="Layer" class="shp2" d="M68.5,271h174.6v-16.6h-174.6z" />
+		<path id="Layer" class="shp2" d="M68.5,315.7h174.6v-16.6h-174.6z" />
+		<path id="Layer" class="shp2" d="M68.5,360.5h120v-16.6h-120z" />
+	</g>
+</svg>
