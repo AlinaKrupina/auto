@@ -11,6 +11,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
     </head>
     <body>
+        <div class="popup">
+            <a href="/cabinet">
+                <div class="popup-in popup-close"></div>
+            </a>
+            <div class="popup-order">
+                <div class="popup-order-in">
+                    <a class="popup-close-button" href="/cabinet">
+                        <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.5 240.5" style="enable-background:new 0 0 240.5 240.5;" xml:space="preserve">
+                            <g>
+                                <line class="st0" x1="12" y1="12" x2="228.5" y2="228.5"/>
+                                <line class="st0" x1="12" y1="228.5" x2="228.5" y2="12"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <h3 class="bold">Заказ сформирован успешно</h3>
+                    <div class="popup-order-number">
+                        <p class="bold">Ваш заказ №6 от 28.12.2017</p>
+                        <p>Номер вашей оплаты: №6/1</p>
+                    </div>
+                    <div class="popup-order-consult">
+                        <img src="/assets/img/consult.png" alt="consult">
+                        <p class="bold">Наш менеджер свяжется с Вами на протяжении часа, чтобы уточнить заказ</p>
+                    </div>
+                    <p class="look-for">Вы можете следить за выполнением своего заказа в</p>
+                    <a href="/cabinet" class="button red uppercase bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 101" width="81" height="101">
+                            <g id="Layer">
+                                <path id="Layer" fill="#fff" class="shp0" d="M56.8,17.8c0,9.8 -7.3,22.5 -16.4,22.5c-9.1,0 -16.4,-12.7 -16.4,-22.5c0,-9.8 7.4,-17.8 16.4,-17.8c9,0 16.4,8 16.4,17.8z" />
+                                <path id="Layer" fill="#fff" class="shp0" d="M78,73.8c-3.4,-23.5 -13.6,-25 -19.8,-25l-17.5,-2.1h-0.3l-17.5,2.1c-6.2,0 -16.4,1.5 -19.8,25l-3.1,15.8c3.1,2.8 6.5,5.3 10.2,7.3l2.7,1.4c6.2,3 48.9,3 55.2,0l2.7,-1.4c3.6,-2 7,-4.4 10.2,-7.3z" />
+                            </g>
+                        </svg>
+                        ПерсональныЙ раздел сайта
+                    </a>
+                    <a href="/category" class="button white uppercase bold">Продолжить покупки</a>
+                </div>
+            </div>
+        </div>
         <header>
             <a href="/" class="logo">
                 <img src="/assets/img/logo.svg" alt="logo">
@@ -130,7 +167,7 @@
                         <p class="description"> Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически. Если все заполнено верно, нажмите кнопку "Оформить заказ".</p>
                         <div class="commission-tabs">
                             <div class="commission-item">
-                                <div class="commission-item-title">
+                                <div class="commission-item-title hide js-commission">
                                     <p class="title bold">Покупатель</p>
                                     <p class="change bold">Изменить</p>
                                 </div>
@@ -172,7 +209,7 @@
                                 </div>
                             </div>
                             <div class="commission-item">
-                                <div class="commission-item-title">
+                                <div class="commission-item-title hide js-commission">
                                     <p class="title bold">Доставка</p>
                                     <p class="change bold">Изменить</p>
                                 </div>
@@ -216,7 +253,7 @@
                                 </div>
                             </div>
                             <div class="commission-item fail">
-                                <div class="commission-item-title">
+                                <div class="commission-item-title hide js-commission">
                                     <p class="title bold">Оплата</p>
                                     <p class="change bold">Изменить</p>
                                 </div>
@@ -243,7 +280,7 @@
                                 </div>
                             </div>
                             <div class="commission-item last">
-                                <div class="commission-item-title">
+                                <div class="commission-item-title hide js-commission">
                                     <p class="title bold">Товары в заказе</p>
                                     <p class="change bold">Изменить</p>
                                 </div>

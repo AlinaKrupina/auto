@@ -18,10 +18,46 @@ $(document).ready(function() {
         $(this).parents('.js-counter').find('input').val(a + 1);
     });
 
+    $('.js-commission').click(function(){
+        $(this).toggleClass('hide');
+    });
+
+    $('.popup-close').click(function(){
+        $('body').removeClass('overflow');
+        $('.popup').removeClass('selected');
+        $('.popup').removeClass('order');
+        $('.popup').removeClass('send');
+        $('.popup').removeClass('basket');
+        $('.popup').removeClass('one-click');
+    });
+
+
+    /*popups*/
     $(".exchange").click(function() {
-        $('body, .wrapper').toggleClass('overflow');
+        $('body').toggleClass('overflow');
         $('.user-panel .result').toggleClass('show');
     });
+    $(".commission-order").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('order');
+    });
+    $(".add-to-compare").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('selected');
+    });
+    $(".send-form").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('send');
+    });
+    $(".user-panel .buy").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('basket');
+    });
+    $(".buy-one-click").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('one-click');
+    });
+
 
     $('.document-tabs .close').click(function(){
         $('#instructions input:checked').prop('checked', false);
