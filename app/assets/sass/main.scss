@@ -335,6 +335,18 @@ header {
             display: block;
         }
     }
+    &.forgot-pass{
+        display: block;
+        .popup-forgot{
+            display: block;
+        }
+    }
+    &.subscribe-p{
+        display: block;
+        .popup-subscribe{
+            display: block;
+        }
+    }
     &.basket{
         display: block;
         .popup-basket{
@@ -647,6 +659,42 @@ header {
                 margin-top: 40px;
                 font-size: 16px;
             }
+        }
+    }
+    &-forgot, &-subscribe{
+        text-align: center;
+        position: fixed;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px 0;
+        max-width: 820px;
+        width: 90%;
+        display: none;
+        box-shadow: 0px 12px 27px rgba(21,64,63,0.47);
+        &-in{
+            width: 420px;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 24px;
+            color: #45948b;
+        }
+        img{
+            width: 100%;
+            margin: 20px 0 30px;
+        }
+        a{
+            line-height: 60px;
+            width: 280px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            color: #fff;
+            background: #ed174c;
+            display: block;
+            margin: 0 auto;
         }
     }
 }

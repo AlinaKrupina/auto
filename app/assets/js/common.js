@@ -29,6 +29,8 @@ $(document).ready(function() {
         $('.popup').removeClass('send');
         $('.popup').removeClass('basket');
         $('.popup').removeClass('one-click');
+        $('.popup').removeClass('forgot-pass');
+        $('.popup').removeClass('subscribe-p');
     });
 
 
@@ -57,18 +59,19 @@ $(document).ready(function() {
         $('body').toggleClass('overflow');
         $('.popup').toggleClass('one-click');
     });
+    $(".step-second").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('forgot-pass');
+    });
+    $(".subscribe-button .add").click(function() {
+        $('body').toggleClass('overflow');
+        $('.popup').toggleClass('subscribe-p');
+    });
 
 
     $('.document-tabs .close').click(function(){
         $('#instructions input:checked').prop('checked', false);
     });
-
-    // $(".js-compare.owl-carousel").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     margin: 10,
-    //     nav: true
-    // });
 
     $(".main-slider.owl-carousel").owlCarousel({
         items: 1,

@@ -302,6 +302,14 @@ header {
     display: block; }
     .popup.one-click .popup-one-click {
       display: block; }
+  .popup.forgot-pass {
+    display: block; }
+    .popup.forgot-pass .popup-forgot {
+      display: block; }
+  .popup.subscribe-p {
+    display: block; }
+    .popup.subscribe-p .popup-subscribe {
+      display: block; }
   .popup.basket {
     display: block; }
     .popup.basket .popup-basket {
@@ -623,6 +631,40 @@ header {
         background: #ed174c;
         margin-top: 40px;
         font-size: 16px; }
+  .popup-forgot, .popup-subscribe {
+    text-align: center;
+    position: fixed;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 60px 0;
+    max-width: 820px;
+    width: 90%;
+    display: none;
+    -webkit-box-shadow: 0px 12px 27px rgba(21, 64, 63, 0.47);
+            box-shadow: 0px 12px 27px rgba(21, 64, 63, 0.47); }
+    .popup-forgot-in, .popup-subscribe-in {
+      width: 420px;
+      margin: 0 auto; }
+    .popup-forgot h3, .popup-subscribe h3 {
+      font-size: 24px;
+      color: #45948b; }
+    .popup-forgot img, .popup-subscribe img {
+      width: 100%;
+      margin: 20px 0 30px; }
+    .popup-forgot a, .popup-subscribe a {
+      line-height: 60px;
+      width: 280px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      color: #fff;
+      background: #ed174c;
+      display: block;
+      margin: 0 auto; }
 
 .user-panel {
   position: fixed;
