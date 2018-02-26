@@ -2291,6 +2291,51 @@ main {
       list-style-position: inside;
       line-height: 1.5; }
 
+.section-notfound {
+  background-image: url("../img/background-404.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 65px 0;
+  background-position-y: top; }
+  .section-notfound .notfound-block {
+    text-align: center;
+    position: relative; }
+    .section-notfound .notfound-block > * {
+      display: block;
+      margin: 0 auto; }
+    .section-notfound .notfound-block h3 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 35px; }
+    .section-notfound .notfound-block .notfound-img {
+      width: 90%;
+      max-width: 800px; }
+    .section-notfound .notfound-block .nlo-img {
+      width: 100%;
+      max-width: 180px;
+      margin-bottom: 70px;
+      position: relative;
+      z-index: 2; }
+    .section-notfound .notfound-block .light-img {
+      width: 100%;
+      max-width: 90px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 165px; }
+    .section-notfound .notfound-block .to-catalog {
+      width: 380px;
+      line-height: 60px;
+      background: #ce1745;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 20px; }
+
 .opt-section {
   position: relative;
   overflow: hidden; }
