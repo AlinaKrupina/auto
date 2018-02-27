@@ -5887,6 +5887,112 @@ main {
         }
     }
 }
+
+.conditions-section{
+    padding-top: 50px;
+    background: url(../img/conditions-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    & + .delivery{
+        background: #d8ece9;
+        .section-in{
+            max-width: 980px;
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .conditions{
+        &-in{
+            margin: 0 auto;
+        }
+        &-block{
+            max-width: 980px;
+            width: 100%;
+            margin: 0 auto;
+            h1{
+                color: #000;
+                font-size: 24px;
+                padding-bottom: 55px;
+            }
+            .quality{
+                padding: 50px 80px 40px;
+                background: #fff url(../img/conditions.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                box-shadow: -1.953px 5.673px 27px rgba(48,107,100,0.24);
+                .title{
+                    padding-bottom: 30px;
+                }
+                p{
+                    width: 60%;
+                }
+            }
+            h2{
+                font-size: 16px;
+                margin-bottom: 45px;
+                padding: 0;
+            }
+            .goods{
+                padding: 50px;
+                background: #fff;
+                margin: 40px 0;
+
+                &-in{
+                    display: flex;
+                    justify-content: space-between;
+                    div{
+                        width: calc((100% - 60px)/3);
+                        background: #f4fafa;
+                        padding: 30px 40px;
+                        text-align: center;
+                        .icon{
+                            width: 35px;
+                            margin-bottom: 20px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .course{
+                background: #fff;
+                margin: 40px 0;
+                padding: 50px;
+                h2{
+                    margin-bottom: 0;
+                }
+                &-in{
+                    display: flex;
+                    justify-content: space-between;
+                    div{
+                        width: calc((100% - 40px)/3);
+                        position: relative;
+                    }
+                }
+                img{
+                    max-width: 80%;
+                    max-height: 80%;
+                    margin-top: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                p{
+                    color: #2c282b;
+                    margin-top: 30px;
+                    span{
+                        color: #7ad0c6;
+                        font-size: 36px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     background: #4e4e4e;
     padding: 60px 0 120px;

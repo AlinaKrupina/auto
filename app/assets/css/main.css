@@ -5127,6 +5127,106 @@ main {
       margin-left: 30px;
       margin-top: 30px; }
 
+.conditions-section {
+  padding-top: 50px;
+  background: url(../img/conditions-background.png);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat; }
+  .conditions-section + .delivery {
+    background: #d8ece9; }
+    .conditions-section + .delivery .section-in {
+      max-width: 980px;
+      padding: 0;
+      width: 100%;
+      margin: 0 auto; }
+  .conditions-section .conditions-in {
+    margin: 0 auto; }
+  .conditions-section .conditions-block {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto; }
+    .conditions-section .conditions-block h1 {
+      color: #000;
+      font-size: 24px;
+      padding-bottom: 55px; }
+    .conditions-section .conditions-block .quality {
+      padding: 50px 80px 40px;
+      background: #fff url(../img/conditions.png);
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      -webkit-box-shadow: -1.953px 5.673px 27px rgba(48, 107, 100, 0.24);
+              box-shadow: -1.953px 5.673px 27px rgba(48, 107, 100, 0.24); }
+      .conditions-section .conditions-block .quality .title {
+        padding-bottom: 30px; }
+      .conditions-section .conditions-block .quality p {
+        width: 60%; }
+    .conditions-section .conditions-block h2 {
+      font-size: 16px;
+      margin-bottom: 45px;
+      padding: 0; }
+    .conditions-section .conditions-block .goods {
+      padding: 50px;
+      background: #fff;
+      margin: 40px 0; }
+      .conditions-section .conditions-block .goods-in {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .conditions-section .conditions-block .goods-in div {
+          width: -webkit-calc((100% - 60px)/3);
+          width: calc((100% - 60px)/3);
+          background: #f4fafa;
+          padding: 30px 40px;
+          text-align: center; }
+          .conditions-section .conditions-block .goods-in div .icon {
+            width: 35px;
+            margin-bottom: 20px;
+            height: auto; }
+    .conditions-section .conditions-block .course {
+      background: #fff;
+      margin: 40px 0;
+      padding: 50px; }
+      .conditions-section .conditions-block .course h2 {
+        margin-bottom: 0; }
+      .conditions-section .conditions-block .course-in {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .conditions-section .conditions-block .course-in div {
+          width: -webkit-calc((100% - 40px)/3);
+          width: calc((100% - 40px)/3);
+          position: relative; }
+      .conditions-section .conditions-block .course img {
+        max-width: 80%;
+        max-height: 80%;
+        margin-top: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .conditions-section .conditions-block .course p {
+        color: #2c282b;
+        margin-top: 30px; }
+        .conditions-section .conditions-block .course p span {
+          color: #7ad0c6;
+          font-size: 36px;
+          margin-right: 10px; }
+
 footer {
   background: #4e4e4e;
   padding: 60px 0 120px; }
